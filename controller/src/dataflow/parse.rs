@@ -15,6 +15,8 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::io::{BufReader};
 use std::collections::{HashMap,HashSet};
+use std::time::Duration;
+use std::{thread};
 
 use self::regex::Regex;
 
@@ -562,6 +564,7 @@ fn set_true_output_rates(topology: &mut Topology, operator_rates: Vec<(OperatorI
 {
     for (ref op_id, ref op_rate) in operator_rates
     { // There are given source rates. Use these instead of the logged values
+        topology.print();
         let op_idx = topology.get_node_idx(op_id);
         println!("Source id: {}, {:?}", op_id, op_idx);
         match topology.logical_graph.node_weight_mut(op_idx)
