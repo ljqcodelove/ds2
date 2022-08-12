@@ -64,12 +64,13 @@ public class MetricsManager implements Serializable {
 	public MetricsManager(String taskDescription, Configuration jobConfiguration) {
 		taskId = taskDescription;
 		String workerId = taskId.replace("Timestamps/Watermarks", "Timestamps-Watermarks");
+                workerId = workerId.replace("TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303))", "TriggerWindow");
 		workerName = workerId.substring(0, workerId.indexOf("(")-1);
 		instanceId = Integer.parseInt(workerId.substring(workerId.indexOf("(")+1, workerId.indexOf("/")));
 		numInstances = Integer.parseInt(workerId.substring(workerId.indexOf("/")+1, workerId.indexOf(")")));
 		status = new ProcessingStatus();
 		windowSize = jobConfiguration.getLong("policy.windowSize",  10_000_000_000L);
-		ratesPath = jobConfiguration.getString("policy.rates.path", "rates/");
+		ratesPath = jobConfiguration.getString("policy.rates.path", "dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/rates/");
 		currentWindowStart = status.getProcessingStart();
 	}
 

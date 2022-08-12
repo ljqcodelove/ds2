@@ -1,0 +1,33 @@
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: 367e348000af91782a580e5f85fdd3de. Returning after job submission.
+Job has been submitted with JobID 367e348000af91782a580e5f85fdd3de
+JAR file does not exist: /root/dannylian/code/ds2/flink-examples/target/flink-examples-0427Query8-5000000-jar-with-dependencies.jar
+
+Use the help option (-h or --help) to get help on the command.
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: bbce5243357981c01e9b695a7133e734. Returning after job submission.
+Job has been submitted with JobID bbce5243357981c01e9b695a7133e734
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: a904ee4d51c5f142311523cdcdf9d55a. Returning after job submission.
+Job has been submitted with JobID a904ee4d51c5f142311523cdcdf9d55a
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: 84f551cfd16057ad94ca1177c15966ae. Returning after job submission.
+Job has been submitted with JobID 84f551cfd16057ad94ca1177c15966ae
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: 5247b1ad375865353164eca42644ab51. Returning after job submission.
+Job has been submitted with JobID 5247b1ad375865353164eca42644ab51

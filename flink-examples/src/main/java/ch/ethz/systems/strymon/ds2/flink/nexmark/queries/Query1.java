@@ -41,7 +41,7 @@ public class Query1 {
 
         final float exchangeRate = params.getFloat("exchange-rate", 0.82F);
 
-        final int srcRate = params.getInt("srcRate", 100000);
+        final int srcRate = params.getInt("srcRate", 1000000);
 
         // set up the execution environment
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

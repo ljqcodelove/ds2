@@ -57,9 +57,9 @@ public class Query3 {
 
         env.disableOperatorChaining();
 
-        final int auctionSrcRate = params.getInt("auction-srcRate", 20000);
+        final int auctionSrcRate = params.getInt("auction-srcRate", 1800000);
 
-        final int personSrcRate = params.getInt("person-srcRate", 10000);
+        final int personSrcRate = params.getInt("person-srcRate", 900000);
 
         DataStream<Auction> auctions = env.addSource(new AuctionSourceFunction(auctionSrcRate))
                 .name("Custom Source: Auctions")

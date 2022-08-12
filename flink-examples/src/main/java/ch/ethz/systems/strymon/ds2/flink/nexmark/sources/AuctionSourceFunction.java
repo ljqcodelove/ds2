@@ -42,7 +42,7 @@ public class AuctionSourceFunction extends RichParallelSourceFunction<Auction> {
 
     @Override
     public void run(SourceContext<Auction> ctx) throws Exception {
-        while (running && eventsCountSoFar < 70_000_000) {
+        while (running && eventsCountSoFar < 700_000_000) {
             long emitStartTime = System.currentTimeMillis();
 
             for (int i = 0; i < rate; i++) {

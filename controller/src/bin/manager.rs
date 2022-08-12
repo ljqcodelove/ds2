@@ -17,12 +17,22 @@ use std::ffi::{OsStr};
 use std::collections::{HashMap};
 use std::str::FromStr;
 use std::f64;
-use std::path::{PathBuf};
+use std::path::{PathBuf,Path};
 use config::{Config, ConfigError, File};
 use std::process::Command;
+use std::fs;
+use std::io;
+use std::{thread};
 
 use ds2::dataflow::{Epoch, OperatorId, OperatorInstances, parse::*};
 use ds2::policy::scaling::*;
+
+fn remove_dir_contents<P: AsRef<Path>>(path: P) -> io::Result<()> {
+    for entry in fs::read_dir(path)? {
+        fs::remove_file(entry?.path())?;
+    }
+    Ok(())
+}
 
 /// Formats a dataflow configuration for Flink scripts
 fn format_flink_configuration(conf: &Vec<(OperatorId,OperatorInstances)>) -> String
@@ -87,6 +97,12 @@ pub fn main() -> notify::Result<()>
     let metrics_repo_path = match conf.get::<PathBuf>("paths.metrics_repo")
     {
         Ok(repo) => { eprintln!("Metrics repo: {:?}",repo); repo },
+        Err(e) => panic!("Error parsing metrics repository parameter: {:?}", e),
+    };
+
+    let watcher_repo_path = match conf.get::<PathBuf>("paths.watcher_repo")
+    {
+        Ok(repo) => { eprintln!("Watcher repo: {:?}",repo); repo },
         Err(e) => panic!("Error parsing metrics repository parameter: {:?}", e),
     };
 
@@ -160,7 +176,8 @@ pub fn main() -> notify::Result<()>
     // Create a watcher
     let mut watcher: RecommendedWatcher = try!(Watcher::new(tx.clone(), Duration::from_secs(policy_interval as u64)));
     // Path to be monitored
-    try!(watcher.watch(metrics_repo_path.as_path(), RecursiveMode::Recursive));
+    // try!(watcher.watch(metrics_repo_path.as_path(), RecursiveMode::Recursive));
+    try!(watcher.watch(watcher_repo_path.as_path(), RecursiveMode::Recursive));
     let os_str_ext = OsStr::new(file_extension.as_str());
 
     match system.as_str()
@@ -202,6 +219,7 @@ pub fn main() -> notify::Result<()>
                 match rx.recv()
                 {
                     Ok(DebouncedEvent::Create(p)) =>
+                    //OK(DebouncedEvent::Create(metrics_repo_path)) =>
                     {
                         if let Some(ext) = p.extension()
                         {
@@ -227,7 +245,7 @@ pub fn main() -> notify::Result<()>
                                     eprintln!("All log files for epoch {} have been found.",epoch);
                                     // Retrieve true output rates of source operators (if any)
                                     eprintln!("Checking source operator rates...");
-                                    set_source_rates(source_rates_path.as_path(),&mut topo,false);
+                                    set_source_rates(source_rates_path.as_path(),&mut topo,true);
                                     eprintln!("Done.");
                                     let mut new_conf = match epochs_since_reconfiguration >= warm_up_time
                                     {
@@ -239,7 +257,7 @@ pub fn main() -> notify::Result<()>
                                                                                     target_rate_ratio,
                                                                                     scaling_factor,
                                                                                     Epoch::from_str(epoch).expect("Error converting epoch number."),
-                                                                                    false);
+                                                                                    true);
                                             eprintln!("Estimated optimal configuration at epoch {}: {}",epoch,nc);
                                             let mut c = as_vec(&nc);
                                             c.sort();
@@ -289,21 +307,31 @@ pub fn main() -> notify::Result<()>
                                         eprintln!("Submitted reconfigured job with id: {:?}", job_id);
                                         // Update topology metadata with the new configuration
                                         topo.set_configuration(&new_conf);
+                                        topo.clear_rates();
+					topo.print();
                                         conf = new_conf;
+                                        num_instances = conf.iter().map(|(_,c)| c).sum();
+                                        eprintln!("Loaded initial physical topology with {} operator instances.", num_instances);
                                         epochs_since_reconfiguration = 0;
                                         evaluations = 0;
+                                        remove_dir_contents("../workspace/flink-1.4.1-instrumented/flink-1.4.1/rates/").unwrap();
+                                        thread::sleep(Duration::from_millis(3000));
                                         // Remove old rates files
                                         // TODO: remove only files in the repo
-                                        let _ = Command::new("rm")
-                                                    .arg("-r")
-                                                    .arg(metrics_repo_path.to_str().unwrap())
-                                                    .output()
-                                                    .expect("Failed to remove log files.");
+                                        //let _ = Command::new("rm")
+                                        //            .arg("-r")
+                                        //            .arg(metrics_repo_path.to_str().unwrap())
+                                        //            .output()
+                                        //            .expect("Failed to remove log files.");
+                                        //eprintln!("True, danny danny test 3");
                                         // Create a new rates folder
-                                        let _ = Command::new("mkdir")
-                                                    .arg(metrics_repo_path.to_str().unwrap())
-                                                    .output()
-                                                    .expect("Failed to create new rates folder.");
+                                        //let _  = Command::new("mkdir")
+                                        //            .arg(metrics_repo_path.to_str().unwrap())
+                                        //            .output()
+                                        //            .expect("Failed to create new rates folder.");
+                                        //eprintln!("True, danny danny test 4");
+                                        //eprintln!("{}", metrics_repo_path.to_str().unwrap());
+                                        //eprintln!("{}", metrics_repo_path.as_path().display());
                                     }
                                     else
                                     { // No re-configuration was issued
@@ -316,6 +344,7 @@ pub fn main() -> notify::Result<()>
                         }
                     },
                     Err(e) => panic!("Monitoring error: {:?}", e),
+                    //_ => {eprintln!("Sorry Sorry,doesn't match");}
                     _ => {}
                 }
             }

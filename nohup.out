@@ -1,0 +1,21 @@
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: 07648fd9018c9a983e33c3613190072c. Returning after job submission.
+Job has been submitted with JobID 07648fd9018c9a983e33c3613190072c
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: 58290e7783a3b52cef642b0ff109caa3. Returning after job submission.
+Job has been submitted with JobID 58290e7783a3b52cef642b0ff109caa3
+JAR file does not exist: /root/dannylian/code/ds2/flink-examples/target/flink-examples-0427Query8-50000-jar-with-dependencies.jar
+
+Use the help option (-h or --help) to get help on the command.
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: e28eb8dd9ae8e84afcaad6fc3268de46. Returning after job submission.
+Job has been submitted with JobID e28eb8dd9ae8e84afcaad6fc3268de46

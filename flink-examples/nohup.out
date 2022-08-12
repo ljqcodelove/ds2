@@ -1,0 +1,6 @@
+Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+Using address 9.135.56.161:6123 to connect to JobManager.
+JobManager web interface address http://9.135.56.161:8081
+Starting execution of program
+Submitting Job with JobID: 284bb96e0913019ceaeda644d6f549bc. Returning after job submission.
+Job has been submitted with JobID 284bb96e0913019ceaeda644d6f549bc

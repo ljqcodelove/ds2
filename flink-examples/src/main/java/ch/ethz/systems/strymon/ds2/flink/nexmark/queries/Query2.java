@@ -48,7 +48,7 @@ public class Query2 {
         // enable latency tracking
         env.getConfig().setLatencyTrackingInterval(5000);
 
-        final int srcRate = params.getInt("srcRate", 100000);
+        final int srcRate = params.getInt("srcRate", 1000000);
 
         DataStream<Bid> bids = env.addSource(new BidSourceFunction(srcRate)).setParallelism(params.getInt("p-source", 1));
 

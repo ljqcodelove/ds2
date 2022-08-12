@@ -59,9 +59,9 @@ public class Query8 {
         // enable latency tracking
         //env.getConfig().setLatencyTrackingInterval(5000);
 
-        final int auctionSrcRate = params.getInt("auction-srcRate", 50000);
+        final int auctionSrcRate = params.getInt("auction-srcRate",250000);
 
-        final int personSrcRate = params.getInt("person-srcRate", 30000);
+        final int personSrcRate = params.getInt("person-srcRate", 150000);
 
         env.setParallelism(params.getInt("p-window", 1));
 

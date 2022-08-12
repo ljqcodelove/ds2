@@ -1,0 +1,742 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 261488640 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2800), pid=6434, tid=0x00007f771dc52700
+#
+# JRE version:  (8.0_292-b02) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.292-b2 mixed mode, sharing linux-amd64 compressed oops)
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f7714008800):  JavaThread "Unknown thread" [_thread_in_vm, id=6435, stack(0x00007f771db52000,0x00007f771dc53000)]
+
+Stack: [0x00007f771db52000,0x00007f771dc53000],  sp=0x00007f771dc51330,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xb08edd]  VMError::report_and_die()+0x15d
+V  [libjvm.so+0x4fac49]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*)+0x99
+V  [libjvm.so+0x9611d3]  os::Linux::commit_memory_impl(char*, unsigned long, bool)+0x113
+V  [libjvm.so+0x9613f9]  os::pd_commit_memory(char*, unsigned long, unsigned long, bool)+0x29
+V  [libjvm.so+0x95564a]  os::commit_memory(char*, unsigned long, unsigned long, bool)+0x2a
+V  [libjvm.so+0x9ca95b]  PSVirtualSpace::expand_by(unsigned long)+0x6b
+V  [libjvm.so+0x9787cd]  ParMarkBitMap::initialize(MemRegion)+0x17d
+V  [libjvm.so+0x9c084e]  PSParallelCompact::initialize()+0x19e
+V  [libjvm.so+0x981275]  ParallelScavengeHeap::initialize()+0x3a5
+V  [libjvm.so+0xad2e91]  Universe::initialize_heap()+0x101
+V  [libjvm.so+0xad3f63]  universe_init()+0x33
+V  [libjvm.so+0x648e25]  init_globals()+0x55
+V  [libjvm.so+0xab6db7]  Threads::create_vm(JavaVMInitArgs*, bool*)+0x247
+V  [libjvm.so+0x70c0a4]  JNI_CreateJavaVM+0x74
+C  [libjli.so+0x7720]  JavaMain+0x90
+C  [libpthread.so.0+0x7e25]  start_thread+0xc5
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00007f7714008800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6435, stack(0x00007f771db52000,0x00007f771dc53000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x000000060d400000, size: 7980 MB, Compressed Oops mode: Non-zero based:0x000000060d3ff000, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+60d400000-60d980000 rw-p 00000000 00:00 0 
+60d980000-759c00000 ---p 00000000 00:00 0 
+759c00000-759e80000 rw-p 00000000 00:00 0 
+759e80000-800000000 ---p 00000000 00:00 0 
+7f76d0000000-7f76d0021000 rw-p 00000000 00:00 0 
+7f76d0021000-7f76d4000000 ---p 00000000 00:00 0 
+7f76d4000000-7f76d4021000 rw-p 00000000 00:00 0 
+7f76d4021000-7f76d8000000 ---p 00000000 00:00 0 
+7f76d8000000-7f76d8021000 rw-p 00000000 00:00 0 
+7f76d8021000-7f76dc000000 ---p 00000000 00:00 0 
+7f76dc000000-7f76dc021000 rw-p 00000000 00:00 0 
+7f76dc021000-7f76e0000000 ---p 00000000 00:00 0 
+7f76e0000000-7f76e0021000 rw-p 00000000 00:00 0 
+7f76e0021000-7f76e4000000 ---p 00000000 00:00 0 
+7f76e4000000-7f76e4021000 rw-p 00000000 00:00 0 
+7f76e4021000-7f76e8000000 ---p 00000000 00:00 0 
+7f76e8000000-7f76e8021000 rw-p 00000000 00:00 0 
+7f76e8021000-7f76ec000000 ---p 00000000 00:00 0 
+7f76ec000000-7f76ec021000 rw-p 00000000 00:00 0 
+7f76ec021000-7f76f0000000 ---p 00000000 00:00 0 
+7f76f0000000-7f76f0021000 rw-p 00000000 00:00 0 
+7f76f0021000-7f76f4000000 ---p 00000000 00:00 0 
+7f76f4000000-7f76f4021000 rw-p 00000000 00:00 0 
+7f76f4021000-7f76f8000000 ---p 00000000 00:00 0 
+7f76f8000000-7f76f8021000 rw-p 00000000 00:00 0 
+7f76f8021000-7f76fc000000 ---p 00000000 00:00 0 
+7f76fc000000-7f76fc021000 rw-p 00000000 00:00 0 
+7f76fc021000-7f7700000000 ---p 00000000 00:00 0 
+7f7700000000-7f7700021000 rw-p 00000000 00:00 0 
+7f7700021000-7f7704000000 ---p 00000000 00:00 0 
+7f7705000000-7f7705270000 rwxp 00000000 00:00 0 
+7f7705270000-7f7714000000 ---p 00000000 00:00 0 
+7f7714000000-7f771404e000 rw-p 00000000 00:00 0 
+7f771404e000-7f7718000000 ---p 00000000 00:00 0 
+7f7718819000-7f77189c0000 rw-p 00000000 00:00 0 
+7f77189c0000-7f77189c1000 ---p 00000000 00:00 0 
+7f77189c1000-7f7718ac1000 rw-p 00000000 00:00 0                          [stack:6448]
+7f7718ac1000-7f7718ac2000 ---p 00000000 00:00 0 
+7f7718ac2000-7f7718bc2000 rw-p 00000000 00:00 0                          [stack:6447]
+7f7718bc2000-7f7718bc3000 ---p 00000000 00:00 0 
+7f7718bc3000-7f7718cc3000 rw-p 00000000 00:00 0                          [stack:6446]
+7f7718cc3000-7f7718cc4000 ---p 00000000 00:00 0 
+7f7718cc4000-7f7718dc4000 rw-p 00000000 00:00 0                          [stack:6445]
+7f7718dc4000-7f7718dc5000 ---p 00000000 00:00 0 
+7f7718dc5000-7f7718ec5000 rw-p 00000000 00:00 0                          [stack:6444]
+7f7718ec5000-7f7718ec6000 ---p 00000000 00:00 0 
+7f7718ec6000-7f7718fc6000 rw-p 00000000 00:00 0                          [stack:6443]
+7f7718fc6000-7f7718fc7000 ---p 00000000 00:00 0 
+7f7718fc7000-7f77190c7000 rw-p 00000000 00:00 0                          [stack:6442]
+7f77190c7000-7f77190c8000 ---p 00000000 00:00 0 
+7f77190c8000-7f77191c8000 rw-p 00000000 00:00 0                          [stack:6441]
+7f77191c8000-7f77191c9000 ---p 00000000 00:00 0 
+7f77191c9000-7f77192c9000 rw-p 00000000 00:00 0                          [stack:6440]
+7f77192c9000-7f77192ca000 ---p 00000000 00:00 0 
+7f77192ca000-7f77193ca000 rw-p 00000000 00:00 0                          [stack:6439]
+7f77193ca000-7f77193cb000 ---p 00000000 00:00 0 
+7f77193cb000-7f77194cb000 rw-p 00000000 00:00 0                          [stack:6438]
+7f77194cb000-7f77194cc000 ---p 00000000 00:00 0 
+7f77194cc000-7f77195cc000 rw-p 00000000 00:00 0                          [stack:6437]
+7f77195cc000-7f77195cd000 ---p 00000000 00:00 0 
+7f77195cd000-7f77196d0000 rw-p 00000000 00:00 0                          [stack:6436]
+7f77196d0000-7f771a131000 ---p 00000000 00:00 0 
+7f771a131000-7f771a134000 rw-p 00000000 00:00 0 
+7f771a134000-7f771ab95000 ---p 00000000 00:00 0 
+7f771ab95000-7f771ab97000 rw-p 00000000 00:00 0 
+7f771ab97000-7f771b0c7000 ---p 00000000 00:00 0 
+7f771b0c7000-7f771b0d2000 rw-p 00000000 00:00 0 
+7f771b0d2000-7f771b488000 ---p 00000000 00:00 0 
+7f771b488000-7f771b4a3000 r-xp 00000000 fc:01 1708762                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libzip.so
+7f771b4a3000-7f771b6a2000 ---p 0001b000 fc:01 1708762                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libzip.so
+7f771b6a2000-7f771b6a3000 r--p 0001a000 fc:01 1708762                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libzip.so
+7f771b6a3000-7f771b6a4000 rw-p 0001b000 fc:01 1708762                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libzip.so
+7f771b6a4000-7f771b6cc000 r-xp 00000000 fc:01 1708781                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libjava.so
+7f771b6cc000-7f771b8cb000 ---p 00028000 fc:01 1708781                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libjava.so
+7f771b8cb000-7f771b8cc000 r--p 00027000 fc:01 1708781                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libjava.so
+7f771b8cc000-7f771b8ce000 rw-p 00028000 fc:01 1708781                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libjava.so
+7f771b8ce000-7f771b8dc000 r-xp 00000000 fc:01 1708790                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libverify.so
+7f771b8dc000-7f771badb000 ---p 0000e000 fc:01 1708790                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libverify.so
+7f771badb000-7f771badd000 r--p 0000d000 fc:01 1708790                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libverify.so
+7f771badd000-7f771bade000 rw-p 0000f000 fc:01 1708790                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/libverify.so
+7f771bade000-7f771bae5000 r-xp 00000000 fc:01 25779                      /usr/lib64/librt-2.17.so
+7f771bae5000-7f771bce4000 ---p 00007000 fc:01 25779                      /usr/lib64/librt-2.17.so
+7f771bce4000-7f771bce5000 r--p 00006000 fc:01 25779                      /usr/lib64/librt-2.17.so
+7f771bce5000-7f771bce6000 rw-p 00007000 fc:01 25779                      /usr/lib64/librt-2.17.so
+7f771bce6000-7f771bde7000 r-xp 00000000 fc:01 25499                      /usr/lib64/libm-2.17.so
+7f771bde7000-7f771bfe6000 ---p 00101000 fc:01 25499                      /usr/lib64/libm-2.17.so
+7f771bfe6000-7f771bfe7000 r--p 00100000 fc:01 25499                      /usr/lib64/libm-2.17.so
+7f771bfe7000-7f771bfe8000 rw-p 00101000 fc:01 25499                      /usr/lib64/libm-2.17.so
+7f771bfe8000-7f771cd1d000 r-xp 00000000 fc:01 1708779                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/server/libjvm.so
+7f771cd1d000-7f771cf1c000 ---p 00d35000 fc:01 1708779                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/server/libjvm.so
+7f771cf1c000-7f771cfc9000 r--p 00d34000 fc:01 1708779                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/server/libjvm.so
+7f771cfc9000-7f771cff2000 rw-p 00de1000 fc:01 1708779                    /usr/java/TencentKona-8.0.6-292/jre/lib/amd64/server/libjvm.so
+7f771cff2000-7f771d037000 rw-p 00000000 00:00 0 
+7f771d037000-7f771d1f1000 r-xp 00000000 fc:01 25054                      /usr/lib64/libc-2.17.so
+7f771d1f1000-7f771d3f0000 ---p 001ba000 fc:01 25054                      /usr/lib64/libc-2.17.so
+7f771d3f0000-7f771d3f4000 r--p 001b9000 fc:01 25054                      /usr/lib64/libc-2.17.so
+7f771d3f4000-7f771d3f6000 rw-p 001bd000 fc:01 25054                      /usr/lib64/libc-2.17.so
+7f771d3f6000-7f771d3fb000 rw-p 00000000 00:00 0 
+7f771d3fb000-7f771d3fd000 r-xp 00000000 fc:01 25150                      /usr/lib64/libdl-2.17.so
+7f771d3fd000-7f771d5fd000 ---p 00002000 fc:01 25150                      /usr/lib64/libdl-2.17.so
+7f771d5fd000-7f771d5fe000 r--p 00002000 fc:01 25150                      /usr/lib64/libdl-2.17.so
+7f771d5fe000-7f771d5ff000 rw-p 00003000 fc:01 25150                      /usr/lib64/libdl-2.17.so
+7f771d5ff000-7f771d615000 r-xp 00000000 fc:01 1709206                    /usr/java/TencentKona-8.0.6-292/lib/amd64/jli/libjli.so
+7f771d615000-7f771d814000 ---p 00016000 fc:01 1709206                    /usr/java/TencentKona-8.0.6-292/lib/amd64/jli/libjli.so
+7f771d814000-7f771d815000 r--p 00015000 fc:01 1709206                    /usr/java/TencentKona-8.0.6-292/lib/amd64/jli/libjli.so
+7f771d815000-7f771d816000 rw-p 00016000 fc:01 1709206                    /usr/java/TencentKona-8.0.6-292/lib/amd64/jli/libjli.so
+7f771d816000-7f771d82d000 r-xp 00000000 fc:01 25734                      /usr/lib64/libpthread-2.17.so
+7f771d82d000-7f771da2c000 ---p 00017000 fc:01 25734                      /usr/lib64/libpthread-2.17.so
+7f771da2c000-7f771da2d000 r--p 00016000 fc:01 25734                      /usr/lib64/libpthread-2.17.so
+7f771da2d000-7f771da2e000 rw-p 00017000 fc:01 25734                      /usr/lib64/libpthread-2.17.so
+7f771da2e000-7f771da32000 rw-p 00000000 00:00 0 
+7f771da32000-7f771da53000 r-xp 00000000 fc:01 24864                      /usr/lib64/ld-2.17.so
+7f771da5a000-7f771db52000 rw-p 00000000 00:00 0 
+7f771db52000-7f771db55000 ---p 00000000 00:00 0 
+7f771db55000-7f771dc53000 rw-p 00000000 00:00 0                          [stack:6435]
+7f771dc53000-7f771dc54000 r--p 00021000 fc:01 24864                      /usr/lib64/ld-2.17.so
+7f771dc54000-7f771dc55000 rw-p 00022000 fc:01 24864                      /usr/lib64/ld-2.17.so
+7f771dc55000-7f771dc56000 rw-p 00000000 00:00 0 
+7f771dc56000-7f771dc57000 r-xp 00000000 fc:01 1708981                    /usr/java/TencentKona-8.0.6-292/bin/jps
+7f771dd03000-7f771dd38000 r--s 00000000 fc:01 5616                       /var/db/nscd/passwd
+7f771dd38000-7f771dd3c000 rw-p 00000000 00:00 0 
+7f771dd41000-7f771dd44000 rw-p 00000000 00:00 0 
+7f771dd44000-7f771dd4c000 rw-s 00000000 fc:01 3408918                    /tmp/hsperfdata_root/6434
+7f771dd4c000-7f771dd4d000 rw-p 00000000 00:00 0 
+7f771dd4d000-7f771dd4e000 r--p 00000000 00:00 0 
+7f771dd4e000-7f771dd51000 r-xp 00000000 fc:01 25620                      /usr/lib64/libonion_security.so.1.0.19
+7f771dd51000-7f771de51000 ---p 00003000 fc:01 25620                      /usr/lib64/libonion_security.so.1.0.19
+7f771de51000-7f771de52000 rw-p 00003000 fc:01 25620                      /usr/lib64/libonion_security.so.1.0.19
+7f771de52000-7f771de56000 rw-p 00000000 00:00 0 
+7f771de56000-7f771de57000 r--p 00000000 fc:01 1708981                    /usr/java/TencentKona-8.0.6-292/bin/jps
+7f771de57000-7f771de58000 rw-p 00001000 fc:01 1708981                    /usr/java/TencentKona-8.0.6-292/bin/jps
+7f771e9cc000-7f771e9ed000 rw-p 00000000 00:00 0                          [heap]
+7ffea9648000-7ffea9669000 rw-p 00000000 00:00 0                          [stack]
+7ffea9698000-7ffea969a000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Denv.class.path=/usr/java/TencentKona-8.0.6-292/lib/tools.jar:/usr/java/TencentKona-8.0.6-292/lib/dt.jar:/usr/java/TencentKona-8.0.6-292/lib -Dapplication.home=/usr/java/TencentKona-8.0.6-292 -Xms8m 
+java_command: sun.tools.jps.Jps -lm
+java_class_path (initial): /usr/java/TencentKona-8.0.6-292/lib/tools.jar:/usr/java/TencentKona-8.0.6-292/classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=/usr/java/TencentKona-8.0.6-292/lib/tools.jar:/usr/java/TencentKona-8.0.6-292/lib/dt.jar:/usr/java/TencentKona-8.0.6-292/lib
+PATH=/bin:/usr/maven/apache-maven-3.6.3/bin:/usr/java/TencentKona-8.0.6-292/bin:/root/.cargo/bin:/bin:/usr/maven/apache-maven-3.6.3/bin:/usr/java/TencentKona-8.0.6-292/bin:/usr/maven/apache-maven-3.6.3/bin:/usr/java/TencentKona-8.0.6-292/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/go/bin:/root/go/bin:/root/.ft:/root/bin
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xb09d60], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xb09d60], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x95a8f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x95a8f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x95a8f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x95a8f0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x95c150], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGINT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGTERM: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+
+
+---------------  S Y S T E M  ---------------
+
+OS:CentOS Linux release 7.2 (Final)
+
+uname:Linux 3.10.107-1-tlinux2_kvm_guest-0049 #1 SMP Tue Jul 30 23:46:29 CST 2019 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 127576, NOFILE 1000000, AS infinity
+load average:0.08 0.06 0.07
+
+/proc/meminfo:
+MemTotal:       32680216 kB
+MemFree:          189992 kB
+MemAvailable:     331308 kB
+Buffers:           10384 kB
+Cached:           443768 kB
+SwapCached:            0 kB
+Active:         31630944 kB
+Inactive:         207008 kB
+Active(anon):   31535464 kB
+Inactive(anon):   124456 kB
+Active(file):      95480 kB
+Inactive(file):    82552 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               476 kB
+Writeback:             0 kB
+AnonPages:      31384548 kB
+Mapped:            32656 kB
+Shmem:            276108 kB
+Slab:             142016 kB
+SReclaimable:      40772 kB
+SUnreclaim:       101244 kB
+KernelStack:       68880 kB
+PageTables:       106484 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    16340108 kB
+Committed_AS:   40518012 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      156624 kB
+VmallocChunk:   34359579636 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       96112 kB
+DirectMap2M:     3049472 kB
+DirectMap1G:    32505856 kB
+
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 1 threads per core) family 23 model 49 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, bmi1
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 0
+cpu cores	: 8
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 0
+cpu cores	: 8
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 1
+cpu cores	: 8
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 1
+cpu cores	: 8
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 2
+cpu cores	: 8
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 2
+cpu cores	: 8
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 3
+cpu cores	: 8
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 3
+cpu cores	: 8
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 4
+cpu cores	: 8
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 4
+cpu cores	: 8
+apicid		: 9
+initial apicid	: 9
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 5
+cpu cores	: 8
+apicid		: 10
+initial apicid	: 10
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 5
+cpu cores	: 8
+apicid		: 11
+initial apicid	: 11
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 6
+cpu cores	: 8
+apicid		: 12
+initial apicid	: 12
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 6
+cpu cores	: 8
+apicid		: 13
+initial apicid	: 13
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 7
+cpu cores	: 8
+apicid		: 14
+initial apicid	: 14
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 49
+model name	: AMD EPYC 7K62 48-Core Processor
+stepping	: 0
+microcode	: 0x1000065
+cpu MHz		: 2595.124
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 7
+cpu cores	: 8
+apicid		: 15
+initial apicid	: 15
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl extd_apicid eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 arat
+bogomips	: 5190.24
+TLB size	: 1024 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 32680216k(189992k free), swap 0k(0k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.292-b2) for linux-amd64 JRE (1.8.0_292-b2), built on Jun 17 2021 08:09:31 by "root" with gcc 4.4.7 20120313 (Red Hat 4.4.7-23)
+
+time: Mon Dec 27 09:43:32 2021
+timezone: CST
+elapsed time: 0.005667 seconds (0d 0h 0m 0s)
+
