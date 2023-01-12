@@ -1,0 +1,3 @@
+org/apache/flink/metrics/graphite/GraphiteReporter.class
+org/apache/flink/metrics/graphite/GraphiteReporter$1.class
+org/apache/flink/metrics/graphite/GraphiteReporter$Protocol.class

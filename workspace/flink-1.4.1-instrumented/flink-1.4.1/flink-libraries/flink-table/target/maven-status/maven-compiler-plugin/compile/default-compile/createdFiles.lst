@@ -1,0 +1,16 @@
+org/apache/flink/table/explain/Predecessors.class
+org/apache/calcite/avatica/util/DateTimeUtils$PrecisionTime.class
+org/apache/flink/table/explain/Node.class
+org/apache/flink/table/explain/LocalProperty.class
+org/apache/flink/table/explain/CompilerHints.class
+org/apache/calcite/sql2rel/AuxiliaryConverter$Impl.class
+org/apache/flink/table/explain/GlobalProperties.class
+org/apache/flink/table/annotation/TableType.class
+org/apache/calcite/avatica/util/DateTimeUtils.class
+org/apache/calcite/avatica/util/DateTimeUtils$1.class
+org/apache/flink/table/explain/PlanTree.class
+org/apache/calcite/sql2rel/AuxiliaryConverter.class
+org/apache/flink/table/explain/Costs.class
+org/apache/flink/table/explain/Estimates.class
+org/apache/flink/table/explain/PlanJsonParser.class
+org/apache/calcite/sql/fun/SqlGroupFunction.class

@@ -1,0 +1,290 @@
+2022-11-13 05:42:45,956 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-11-13 05:42:45,957 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Starting TaskManager (Version: 1.4.1, Rev:<unknown>, Date:<unknown>)
+2022-11-13 05:42:45,957 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  OS current user: root
+2022-11-13 05:42:46,094 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-11-13 05:42:46,237 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Current Hadoop/Kerberos user: root
+2022-11-13 05:42:46,237 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM: OpenJDK 64-Bit Server VM - Tencent - 1.8/25.292-b2
+2022-11-13 05:42:46,237 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Maximum heap size: 512 MiBytes
+2022-11-13 05:42:46,237 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JAVA_HOME: (not set)
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Hadoop version: 2.4.1
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM Options:
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:+UseG1GC
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xms512M
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xmx512M
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:MaxDirectMemorySize=8388607T
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog.file=/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-taskmanager-0-VM-56-161-centos.log
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog4j.configuration=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/log4j.properties
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlogback.configurationFile=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/logback.xml
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Program Arguments:
+2022-11-13 05:42:46,239 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     --configDir
+2022-11-13 05:42:46,240 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:42:46,240 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Classpath: :/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-dist_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-python_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-shaded-hadoop2-uber-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/log4j-1.2.17.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/slf4j-log4j12-1.7.7.jar:::
+2022-11-13 05:42:46,240 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-11-13 05:42:46,240 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Registered UNIX signal handlers for [TERM, HUP, INT]
+2022-11-13 05:42:46,243 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Maximum number of open file descriptors is 1000000
+2022-11-13 05:42:46,258 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Loading configuration from /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:42:46,261 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, 9.135.56.161
+2022-11-13 05:42:46,261 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2022-11-13 05:42:46,261 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.mb, 1024
+2022-11-13 05:42:46,261 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.mb, 512
+2022-11-13 05:42:46,261 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 2
+2022-11-13 05:42:46,262 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.memory.preallocate, false
+2022-11-13 05:42:46,262 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2022-11-13 05:42:46,262 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: web.port, 8081
+2022-11-13 05:42:46,262 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, filesystem
+2022-11-13 05:42:46,262 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, file:///root/dannylian/code/ds2/savepoints/
+2022-11-13 05:42:46,263 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: metrics.latency.interval, 10
+2022-11-13 05:42:46,305 INFO  org.apache.flink.runtime.security.modules.HadoopModule        - Hadoop user set to root (auth:SIMPLE)
+2022-11-13 05:42:46,343 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - Trying to select the network interface and address to use by connecting to the leading JobManager.
+2022-11-13 05:42:46,343 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+2022-11-13 05:42:46,345 INFO  org.apache.flink.runtime.net.ConnectionUtils                  - Retrieved new target address /9.135.56.161:6123.
+2022-11-13 05:42:46,348 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager will use hostname/address 'VM-56-161-centos' (127.0.0.1) for communication.
+2022-11-13 05:42:46,350 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager
+2022-11-13 05:42:46,350 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor system at VM-56-161-centos:36282.
+2022-11-13 05:42:46,352 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to start actor system at vm-56-161-centos:36282
+2022-11-13 05:42:46,730 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2022-11-13 05:42:46,801 INFO  akka.remote.Remoting                                          - Starting remoting
+2022-11-13 05:42:46,907 INFO  akka.remote.Remoting                                          - Remoting started; listening on addresses :[akka.tcp://flink@vm-56-161-centos:36282]
+2022-11-13 05:42:46,913 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Actor system started at akka.tcp://flink@vm-56-161-centos:36282
+2022-11-13 05:42:46,919 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl           - No metrics reporter configured, no metrics will be exposed/reported.
+2022-11-13 05:42:46,921 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor
+2022-11-13 05:42:46,925 INFO  org.apache.flink.runtime.io.network.netty.NettyConfig         - NettyConfig [server address: VM-56-161-centos/127.0.0.1, server port: 0, ssl enabled: false, memory segment size (bytes): 32768, transport type: NIO, number of server threads: 2 (manual), number of client threads: 2 (manual), server connect backlog: 0 (use Netty's default), client connect timeout (sec): 120, send/receive buffer size (bytes): 0 (use Netty's default)]
+2022-11-13 05:42:46,927 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerConfiguration  - Messages have a max timeout of 10000 ms
+2022-11-13 05:42:46,931 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Temporary file directory '/tmp': total 98 GB, usable 41 GB (41.84% usable)
+2022-11-13 05:42:46,980 INFO  org.apache.flink.runtime.io.network.buffer.NetworkBufferPool  - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+2022-11-13 05:42:47,066 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Client Proxy. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-11-13 05:42:47,067 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Server. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-11-13 05:42:47,068 INFO  org.apache.flink.runtime.io.network.NetworkEnvironment        - Starting the network environment and its components.
+2022-11-13 05:42:47,107 INFO  org.apache.flink.runtime.io.network.netty.NettyClient         - Successful initialization (took 32 ms).
+2022-11-13 05:42:47,142 INFO  org.apache.flink.runtime.io.network.netty.NettyServer         - Successful initialization (took 35 ms). Listening on SocketAddress /127.0.0.1:37258.
+2022-11-13 05:42:47,189 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Limiting managed memory to 0.7 of the currently free heap space (308 MB), memory will be allocated lazily.
+2022-11-13 05:42:47,192 INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager          - I/O manager uses directory /tmp/flink-io-e7042a22-101f-4639-8516-6ac8997a67b9 for spill files.
+2022-11-13 05:42:47,195 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-29142d39-0730-4342-9398-7914fafdfb7d
+2022-11-13 05:42:47,245 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-233353d9-ada7-48d8-821d-8a87bf11a960
+2022-11-13 05:42:47,252 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor at akka://flink/user/taskmanager#802260211.
+2022-11-13 05:42:47,253 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager data connection information: 58bdc22552eb4d49d89f6373a66bb9da @ VM-56-161-centos (dataPort=37258)
+2022-11-13 05:42:47,253 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager has 2 task slot(s).
+2022-11-13 05:42:47,254 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Memory usage stats: [HEAP: 76/512/512 MB, NON HEAP: 32/32/-1 MB (used/committed/max)]
+2022-11-13 05:42:47,256 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to register at JobManager akka.tcp://flink@9.135.56.161:6123/user/jobmanager (attempt 1, timeout: 500 milliseconds)
+2022-11-13 05:42:47,452 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Successful registration at JobManager (akka.tcp://flink@9.135.56.161:6123/user/jobmanager), starting network stack and library cache.
+2022-11-13 05:42:47,456 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Determined BLOB server address to be /9.135.56.161:37938. Starting BLOB cache.
+2022-11-13 05:42:47,459 INFO  org.apache.flink.runtime.blob.PermanentBlobCache              - Created BLOB cache storage directory /tmp/blobStore-43727ab5-854c-4fe8-b964-1ebbc65b133f
+2022-11-13 05:42:47,462 INFO  org.apache.flink.runtime.blob.TransientBlobCache              - Created BLOB cache storage directory /tmp/blobStore-e26e3b4e-feb4-4297-ad8b-26001faaf68f
+2022-11-13 05:43:13,263 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1)
+2022-11-13 05:43:13,282 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1)
+2022-11-13 05:43:13,283 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from CREATED to DEPLOYING.
+2022-11-13 05:43:13,290 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) [DEPLOYING]
+2022-11-13 05:43:13,285 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from CREATED to DEPLOYING.
+2022-11-13 05:43:13,296 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11)
+2022-11-13 05:43:13,297 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) [DEPLOYING]
+2022-11-13 05:43:13,299 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) [DEPLOYING].
+2022-11-13 05:43:13,306 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) [DEPLOYING].
+2022-11-13 05:43:13,306 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from CREATED to DEPLOYING.
+2022-11-13 05:43:13,307 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) [DEPLOYING]
+2022-11-13 05:43:13,307 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) [DEPLOYING].
+2022-11-13 05:43:13,309 INFO  org.apache.flink.runtime.blob.BlobClient                      - Downloading 886e9ddde07dd43182bf070e5028eab0/p-4da4978a57bf42a33a086aad57544f74ed58ce86-9f3fa0c2710fecbda8e9d9ee04d63910 from /9.135.56.161:37938
+2022-11-13 05:43:13,311 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11)
+2022-11-13 05:43:13,314 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from CREATED to DEPLOYING.
+2022-11-13 05:43:13,317 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) [DEPLOYING]
+2022-11-13 05:43:13,317 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) [DEPLOYING].
+2022-11-13 05:43:13,935 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) [DEPLOYING].
+2022-11-13 05:43:13,936 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) [DEPLOYING].
+2022-11-13 05:43:13,939 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) [DEPLOYING].
+2022-11-13 05:43:13,940 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) [DEPLOYING].
+2022-11-13 05:43:13,949 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,949 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,949 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,954 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,961 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-11-13 05:43:13,961 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-11-13 05:43:13,962 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-11-13 05:43:13,962 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-11-13 05:43:14,125 WARN  org.apache.flink.metrics.MetricGroup                          - The operator name TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) exceeded the 80 characters length limit and was truncated.
+2022-11-13 05:43:14,131 WARN  org.apache.flink.metrics.MetricGroup                          - The operator name TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) exceeded the 80 characters length limit and was truncated.
+2022-11-13 05:43:14,191 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.
+2022-11-13 05:43:14,191 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.
+2022-11-13 05:43:20,191 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%16%1668289400191%1668289400175%0%1
+2022-11-13 05:43:26,190 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%15%1668289406190%1668289406175%0%0
+2022-11-13 05:43:42,199 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%24%1668289422199%1668289422175%0%1
+2022-11-13 05:43:48,202 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%27%1668289428202%1668289428175%0%1
+2022-11-13 05:43:50,198 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%23%1668289430198%1668289430175%0%0
+2022-11-13 05:43:54,270 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%95%1668289434270%1668289434175%0%0
+2022-11-13 05:43:56,263 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%88%1668289436263%1668289436175%0%1
+2022-11-13 05:44:04,275 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%100%1668289444275%1668289444175%0%1
+2022-11-13 05:44:12,267 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%92%1668289452267%1668289452175%0%0
+2022-11-13 05:44:16,228 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%53%1668289456228%1668289456175%0%0
+2022-11-13 05:44:18,190 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%15%1668289458190%1668289458175%0%0
+2022-11-13 05:44:22,193 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%18%1668289462193%1668289462175%0%1
+2022-11-13 05:44:22,235 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%60%1668289462235%1668289462175%0%1
+2022-11-13 05:44:28,208 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%33%1668289468208%1668289468175%0%1
+2022-11-13 05:44:32,263 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%88%1668289472263%1668289472175%0%1
+2022-11-13 05:44:34,221 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%45%1668289474220%1668289474175%0%1
+2022-11-13 05:44:38,229 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%54%1668289478229%1668289478175%0%1
+2022-11-13 05:44:52,514 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%339%1668289492514%1668289492175%0%0
+2022-11-13 05:44:56,452 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%277%1668289496452%1668289496175%0%0
+2022-11-13 05:45:08,837 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%661%1668289508836%1668289508175%0%1
+2022-11-13 05:45:10,639 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%464%1668289510639%1668289510175%0%0
+2022-11-13 05:45:12,338 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%163%1668289512338%1668289512175%0%1
+2022-11-13 05:45:14,412 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%237%1668289514412%1668289514175%0%0
+2022-11-13 05:45:18,239 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%64%1668289518239%1668289518175%0%0
+2022-11-13 05:45:18,653 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%477%1668289518652%1668289518175%0%1
+2022-11-13 05:45:20,814 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%639%1668289520814%1668289520175%0%0
+2022-11-13 05:45:20,814 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%639%1668289520814%1668289520175%0%1
+2022-11-13 05:45:22,890 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%715%1668289522890%1668289522175%0%1
+2022-11-13 05:45:35,009 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%834%1668289535009%1668289534175%0%1
+2022-11-13 05:45:44,648 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%473%1668289544648%1668289544175%0%0
+2022-11-13 05:45:46,786 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%611%1668289546786%1668289546175%0%0
+2022-11-13 05:45:54,987 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%812%1668289554987%1668289554175%0%0
+2022-11-13 05:46:00,768 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%593%1668289560768%1668289560175%0%0
+2022-11-13 05:46:02,891 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%716%1668289562891%1668289562175%0%0
+2022-11-13 05:46:12,944 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%769%1668289572944%1668289572175%0%1
+2022-11-13 05:46:15,078 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%903%1668289575078%1668289574175%0%0
+2022-11-13 05:46:18,895 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%720%1668289578895%1668289578175%0%0
+2022-11-13 05:46:18,896 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%721%1668289578896%1668289578175%0%0
+2022-11-13 05:46:20,992 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%817%1668289580992%1668289580175%0%0
+2022-11-13 05:46:21,469 INFO  org.apache.flink.runtime.taskmanager.Task                     - Attempting to cancel task Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d).
+2022-11-13 05:46:21,469 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from RUNNING to CANCELING.
+2022-11-13 05:46:22,291 INFO  org.apache.flink.runtime.taskmanager.Task                     - Triggering cancellation of task code Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d).
+2022-11-13 05:46:22,292 INFO  org.apache.flink.runtime.taskmanager.Task                     - Attempting to cancel task Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d).
+2022-11-13 05:46:22,293 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from RUNNING to CANCELING.
+2022-11-13 05:46:22,293 INFO  org.apache.flink.runtime.taskmanager.Task                     - Triggering cancellation of task code Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d).
+2022-11-13 05:46:22,714 INFO  org.apache.flink.runtime.taskmanager.Task                     - Attempting to cancel task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e).
+2022-11-13 05:46:22,714 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%539%1668289582714%1668289582175%0%0
+2022-11-13 05:46:22,714 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from RUNNING to CANCELING.
+2022-11-13 05:46:22,715 INFO  org.apache.flink.runtime.taskmanager.Task                     - Triggering cancellation of task code TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e).
+2022-11-13 05:46:22,715 INFO  org.apache.flink.runtime.taskmanager.Task                     - Attempting to cancel task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c).
+2022-11-13 05:46:22,715 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from RUNNING to CANCELING.
+2022-11-13 05:46:22,716 INFO  org.apache.flink.runtime.taskmanager.Task                     - Triggering cancellation of task code TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c).
+2022-11-13 05:46:22,716 ERROR org.apache.flink.streaming.runtime.tasks.StreamTask           - Could not shut down timer service
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2067)
+	at java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
+	at org.apache.flink.streaming.runtime.tasks.SystemProcessingTimeService.shutdownAndAwaitPending(SystemProcessingTimeService.java:197)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:318)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:718)
+	at java.lang.Thread.run(Thread.java:748)
+2022-11-13 05:46:22,716 ERROR org.apache.flink.streaming.runtime.tasks.StreamTask           - Could not shut down timer service
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2067)
+	at java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475)
+	at org.apache.flink.streaming.runtime.tasks.SystemProcessingTimeService.shutdownAndAwaitPending(SystemProcessingTimeService.java:197)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:318)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:718)
+	at java.lang.Thread.run(Thread.java:748)
+2022-11-13 05:46:22,718 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,718 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,718 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,718 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,718 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d).
+2022-11-13 05:46:22,718 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d).
+2022-11-13 05:46:22,718 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e).
+2022-11-13 05:46:22,719 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c).
+2022-11-13 05:46:22,726 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) [CANCELED]
+2022-11-13 05:46:22,726 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) [CANCELED]
+2022-11-13 05:46:22,726 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) [CANCELED]
+2022-11-13 05:46:22,726 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) [CANCELED]
+2022-11-13 05:46:22,727 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state CANCELED to JobManager for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (f169036f2532404c7e4ad98a76b5aa2c)
+2022-11-13 05:46:22,730 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state CANCELED to JobManager for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7f32baf458fdbe862c971748e8c07d9e)
+2022-11-13 05:46:22,730 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state CANCELED to JobManager for task Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (75f57409fade7ce4b565741ce4800b6d)
+2022-11-13 05:46:22,730 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state CANCELED to JobManager for task Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1a51d6505de22a30f8e03a3d7038929d)
+2022-11-19 10:55:37,984 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45220] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1768842867 - discarded
+2022-11-19 10:55:38,126 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45255] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 10:55:38,277 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45297] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 10:55:38,288 ERROR akka.actor.OneForOneStrategy                                  - Error while decoding incoming Akka PDU of length: 164
+akka.remote.transport.AkkaProtocolException: Error while decoding incoming Akka PDU of length: 164
+Caused by: akka.remote.transport.PduCodecException: Decoding PDU failed.
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:173)
+	at akka.remote.transport.ProtocolStateActor.akka$remote$transport$ProtocolStateActor$$decodePdu(AkkaProtocolTransport.scala:657)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:411)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:374)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at akka.actor.FSM$class.processEvent(FSM.scala:663)
+	at akka.remote.transport.ProtocolStateActor.processEvent(AkkaProtocolTransport.scala:285)
+	at akka.actor.FSM$class.akka$actor$FSM$$processMsg(FSM.scala:657)
+	at akka.actor.FSM$$anonfun$receive$1.applyOrElse(FSM.scala:651)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:502)
+	at akka.remote.transport.ProtocolStateActor.aroundReceive(AkkaProtocolTransport.scala:285)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:526)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:495)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: akka.protobuf.InvalidProtocolBufferException: Protocol message tag had invalid wire type.
+	at akka.protobuf.InvalidProtocolBufferException.invalidWireType(InvalidProtocolBufferException.java:99)
+	at akka.protobuf.UnknownFieldSet$Builder.mergeFieldFrom(UnknownFieldSet.java:498)
+	at akka.protobuf.GeneratedMessage.parseUnknownField(GeneratedMessage.java:193)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7179)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7137)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7233)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7228)
+	at akka.protobuf.AbstractParser.parsePartialFrom(AbstractParser.java:141)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:177)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:188)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:193)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:49)
+	at akka.remote.WireFormats$AkkaProtocolMessage.parseFrom(WireFormats.java:7351)
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:174)
+	... 19 more
+2022-11-19 10:55:38,374 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45327] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 10:55:38,486 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45345] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 10:55:38,535 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45360] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 16844079 - discarded
+2022-11-19 10:55:38,687 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45406] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-19 10:55:39,525 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45648] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1245992788 - discarded
+2022-11-19 10:55:39,821 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:45450] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-23 09:02:40,101 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:32978] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-23 09:02:40,114 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:32943] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-23 09:02:40,212 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33009] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-23 09:02:40,248 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33079] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-23 09:02:40,415 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33136] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-23 09:02:40,463 ERROR akka.actor.OneForOneStrategy                                  - Error while decoding incoming Akka PDU of length: 164
+akka.remote.transport.AkkaProtocolException: Error while decoding incoming Akka PDU of length: 164
+Caused by: akka.remote.transport.PduCodecException: Decoding PDU failed.
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:173)
+	at akka.remote.transport.ProtocolStateActor.akka$remote$transport$ProtocolStateActor$$decodePdu(AkkaProtocolTransport.scala:657)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:411)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:374)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at akka.actor.FSM$class.processEvent(FSM.scala:663)
+	at akka.remote.transport.ProtocolStateActor.processEvent(AkkaProtocolTransport.scala:285)
+	at akka.actor.FSM$class.akka$actor$FSM$$processMsg(FSM.scala:657)
+	at akka.actor.FSM$$anonfun$receive$1.applyOrElse(FSM.scala:651)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:502)
+	at akka.remote.transport.ProtocolStateActor.aroundReceive(AkkaProtocolTransport.scala:285)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:526)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:495)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: akka.protobuf.InvalidProtocolBufferException: Protocol message tag had invalid wire type.
+	at akka.protobuf.InvalidProtocolBufferException.invalidWireType(InvalidProtocolBufferException.java:99)
+	at akka.protobuf.UnknownFieldSet$Builder.mergeFieldFrom(UnknownFieldSet.java:498)
+	at akka.protobuf.GeneratedMessage.parseUnknownField(GeneratedMessage.java:193)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7179)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7137)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7233)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7228)
+	at akka.protobuf.AbstractParser.parsePartialFrom(AbstractParser.java:141)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:177)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:188)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:193)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:49)
+	at akka.remote.WireFormats$AkkaProtocolMessage.parseFrom(WireFormats.java:7351)
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:174)
+	... 19 more
+2022-11-23 09:02:40,551 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33237] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 16844079 - discarded
+2022-11-23 09:02:40,567 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33215] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-23 09:02:40,607 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33262] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-23 09:02:40,651 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33291] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-23 09:02:40,704 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33279] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-23 09:02:40,705 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33315] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1784969076 - discarded
+2022-11-23 09:02:40,772 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33342] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1245992788 - discarded
+2022-11-23 09:02:40,813 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:33336] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1768842867 - discarded
+2022-11-23 09:02:42,053 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.255:34283] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded

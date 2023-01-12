@@ -1,0 +1,6 @@
+org/apache/flink/metrics/statsd/StatsDReporterTest$TestingHistogram.class
+org/apache/flink/metrics/statsd/StatsDReporterTest$TestingHistogram$1.class
+org/apache/flink/metrics/statsd/StatsDReporterTest.class
+org/apache/flink/metrics/statsd/StatsDReporterTest$1.class
+org/apache/flink/metrics/statsd/StatsDReporterTest$TestingStatsDReporter.class
+org/apache/flink/metrics/statsd/StatsDReporterTest$DatagramSocketReceiver.class

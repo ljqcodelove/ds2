@@ -1,0 +1,9 @@
+org/apache/flink/streaming/test/socket/SocketWindowWordCountITCase$ServerThread.class
+org/apache/flink/streaming/test/StreamingExamplesITCase$1Parser.class
+org/apache/flink/streaming/test/socket/SocketWindowWordCountITCase$1.class
+org/apache/flink/streaming/test/socket/SocketWindowWordCountITCase.class
+org/apache/flink/streaming/test/StreamingExamplesITCase.class
+org/apache/flink/streaming/test/scala/examples/windowing/TopSpeedWindowingExampleITCase.class
+org/apache/flink/streaming/test/examples/join/WindowJoinData.class
+org/apache/flink/streaming/test/socket/SocketWindowWordCountITCase$NullStream.class
+org/apache/flink/streaming/test/examples/windowing/TopSpeedWindowingExampleITCase.class

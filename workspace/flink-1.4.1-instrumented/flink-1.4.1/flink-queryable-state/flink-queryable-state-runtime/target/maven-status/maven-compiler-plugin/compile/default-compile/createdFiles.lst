@@ -1,0 +1,7 @@
+org/apache/flink/queryablestate/messages/KvStateInternalRequest.class
+org/apache/flink/queryablestate/server/KvStateServerHandler.class
+org/apache/flink/queryablestate/client/proxy/KvStateClientProxyHandler$1.class
+org/apache/flink/queryablestate/messages/KvStateInternalRequest$KvStateInternalRequestDeserializer.class
+org/apache/flink/queryablestate/server/KvStateServerImpl.class
+org/apache/flink/queryablestate/client/proxy/KvStateClientProxyImpl.class
+org/apache/flink/queryablestate/client/proxy/KvStateClientProxyHandler.class

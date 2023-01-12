@@ -1,0 +1,4 @@
+org/apache/flink/runtime/fs/maprfs/MapRFsFactoryTest$MapRFreeClassLoader.class
+org/apache/flink/runtime/fs/maprfs/MapRFreeTests.class
+org/apache/flink/runtime/fs/maprfs/FileSystemAccessTest.class
+org/apache/flink/runtime/fs/maprfs/MapRFsFactoryTest.class

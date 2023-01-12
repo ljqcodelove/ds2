@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>java.jmx</artifactId>
+  <version>0.3.1</version>
+  <name>${artifactId}</name>
+
+  <parent>
+    <groupId>org.clojure</groupId>
+    <artifactId>pom.contrib</artifactId>
+    <version>0.1.2</version>
+  </parent>
+
+  <developers>
+    <developer>
+      <name>Stuart Halloway</name>
+    </developer>
+    <developer>
+      <name>Nick Bailey</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git@github.com:clojure/java.jmx.git</connection>
+    <developerConnection>scm:git:git@github.com:clojure/java.jmx.git</developerConnection>
+    <url>git@github.com:clojure/java.jmx.git</url>
+    <tag>java.jmx-0.3.1</tag>
+  </scm>
+</project>

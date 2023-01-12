@@ -1,0 +1,394 @@
+2022-11-13 05:42:45,517 INFO  org.apache.flink.runtime.jobmanager.JobManager                - --------------------------------------------------------------------------------
+2022-11-13 05:42:45,518 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Starting JobManager (Version: 1.4.1, Rev:<unknown>, Date:<unknown>)
+2022-11-13 05:42:45,518 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  OS current user: root
+2022-11-13 05:42:45,652 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-11-13 05:42:45,749 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Current Hadoop/Kerberos user: root
+2022-11-13 05:42:45,750 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JVM: OpenJDK 64-Bit Server VM - Tencent - 1.8/25.292-b2
+2022-11-13 05:42:45,750 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Maximum heap size: 981 MiBytes
+2022-11-13 05:42:45,750 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JAVA_HOME: (not set)
+2022-11-13 05:42:45,751 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Hadoop version: 2.4.1
+2022-11-13 05:42:45,751 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JVM Options:
+2022-11-13 05:42:45,751 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Xms1024m
+2022-11-13 05:42:45,751 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Xmx1024m
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlog.file=/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-jobmanager-0-VM-56-161-centos.log
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlog4j.configuration=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/log4j.properties
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlogback.configurationFile=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/logback.xml
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Program Arguments:
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     --configDir
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     --executionMode
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     cluster
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Classpath: :/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-dist_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-python_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-shaded-hadoop2-uber-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/log4j-1.2.17.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/slf4j-log4j12-1.7.7.jar:::
+2022-11-13 05:42:45,752 INFO  org.apache.flink.runtime.jobmanager.JobManager                - --------------------------------------------------------------------------------
+2022-11-13 05:42:45,753 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Registered UNIX signal handlers for [TERM, HUP, INT]
+2022-11-13 05:42:45,837 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Loading configuration from /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:42:45,839 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, 9.135.56.161
+2022-11-13 05:42:45,839 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2022-11-13 05:42:45,839 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.mb, 1024
+2022-11-13 05:42:45,839 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.mb, 512
+2022-11-13 05:42:45,839 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 2
+2022-11-13 05:42:45,839 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.memory.preallocate, false
+2022-11-13 05:42:45,839 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2022-11-13 05:42:45,840 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: web.port, 8081
+2022-11-13 05:42:45,840 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, filesystem
+2022-11-13 05:42:45,840 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, file:///root/dannylian/code/ds2/savepoints/
+2022-11-13 05:42:45,841 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: metrics.latency.interval, 10
+2022-11-13 05:42:45,853 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager without high-availability
+2022-11-13 05:42:45,854 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager on 9.135.56.161:6123 with execution mode CLUSTER
+2022-11-13 05:42:45,879 INFO  org.apache.flink.runtime.security.modules.HadoopModule        - Hadoop user set to root (auth:SIMPLE)
+2022-11-13 05:42:45,925 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Trying to start actor system at 9.135.56.161:6123
+2022-11-13 05:42:46,219 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2022-11-13 05:42:46,262 INFO  akka.remote.Remoting                                          - Starting remoting
+2022-11-13 05:42:46,361 INFO  akka.remote.Remoting                                          - Remoting started; listening on addresses :[akka.tcp://flink@9.135.56.161:6123]
+2022-11-13 05:42:46,367 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Actor system started at akka.tcp://flink@9.135.56.161:6123
+2022-11-13 05:42:46,380 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl           - No metrics reporter configured, no metrics will be exposed/reported.
+2022-11-13 05:42:46,383 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager web frontend
+2022-11-13 05:42:46,393 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils           - Determined location of JobManager log file: /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-jobmanager-0-VM-56-161-centos.log
+2022-11-13 05:42:46,393 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils           - Determined location of JobManager stdout file: /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-jobmanager-0-VM-56-161-centos.out
+2022-11-13 05:42:46,394 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Using directory /tmp/flink-web-29889c28-ed08-4690-a4d3-5b50de0c8b55 for the web interface files
+2022-11-13 05:42:46,394 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Created directory /tmp/flink-web-791ed0a2-93f0-46e1-9044-8f0be6185bec for web frontend JAR file uploads.
+2022-11-13 05:42:46,710 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Web frontend listening at 9.135.56.161:8081
+2022-11-13 05:42:46,711 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager actor
+2022-11-13 05:42:46,717 INFO  org.apache.flink.runtime.blob.BlobServer                      - Created BLOB server storage directory /tmp/blobStore-346d0eb5-16a8-44e6-9727-eb42cbe198a1
+2022-11-13 05:42:46,719 INFO  org.apache.flink.runtime.blob.BlobServer                      - Started BLOB server at 0.0.0.0:37938 - max concurrent requests: 50 - max backlog: 1000
+2022-11-13 05:42:46,792 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager at akka.tcp://flink@9.135.56.161:6123/user/jobmanager.
+2022-11-13 05:42:46,793 INFO  org.apache.flink.runtime.jobmanager.MemoryArchivist           - Started memory archivist akka://flink/user/archive
+2022-11-13 05:42:46,800 INFO  org.apache.flink.runtime.jobmanager.JobManager                - JobManager akka.tcp://flink@9.135.56.161:6123/user/jobmanager was granted leadership with leader session ID Some(00000000-0000-0000-0000-000000000000).
+2022-11-13 05:42:46,802 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - Trying to associate with JobManager leader akka.tcp://flink@9.135.56.161:6123/user/jobmanager
+2022-11-13 05:42:46,807 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - Resource Manager associating with leading JobManager Actor[akka://flink/user/jobmanager#1954499863] - leader session 00000000-0000-0000-0000-000000000000
+2022-11-13 05:42:47,427 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 58bdc22552eb4d49d89f6373a66bb9da has started.
+2022-11-13 05:42:47,429 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:36282/user/taskmanager) as baaff274f9c1f5e29979760cb14deab7. Current number of registered hosts is 1. Current number of alive task slots is 2.
+2022-11-13 05:42:50,021 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 949d797fb523ae13990cdec9d2f52569 has started.
+2022-11-13 05:42:50,022 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:45438/user/taskmanager) as ed1e64d06d116dc43dd29fd617f73148. Current number of registered hosts is 2. Current number of alive task slots is 4.
+2022-11-13 05:42:50,844 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 5866c106eca5227d7073e980a322bd91 has started.
+2022-11-13 05:42:50,844 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:35317/user/taskmanager) as 3167cd88f45b617ced40550ec1e09630. Current number of registered hosts is 3. Current number of alive task slots is 6.
+2022-11-13 05:42:51,209 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:45907/user/taskmanager) as c70668cd22c2db6cccc48f73c1a8b070. Current number of registered hosts is 4. Current number of alive task slots is 8.
+2022-11-13 05:42:51,209 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 128d3937e593d4d992b4a08b4bbc7ac2 has started.
+2022-11-13 05:42:51,623 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:60941/user/taskmanager) as 3a4c6d447a9d6183d897cb62e46e4879. Current number of registered hosts is 5. Current number of alive task slots is 10.
+2022-11-13 05:42:51,624 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 458158c55ef1d7c010969928d3d05acf has started.
+2022-11-13 05:42:52,076 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 69a860ab765d663127659beaa5460793 has started.
+2022-11-13 05:42:52,076 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:34136/user/taskmanager) as f89a1174c17b18d3200725e2e20ab7e1. Current number of registered hosts is 6. Current number of alive task slots is 12.
+2022-11-13 05:42:52,497 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 55f5dd8535b774f498091b312aedb33d has started.
+2022-11-13 05:42:52,497 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:37158/user/taskmanager) as 9d24036883550e603107d6e859661054. Current number of registered hosts is 7. Current number of alive task slots is 14.
+2022-11-13 05:42:52,846 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:35963/user/taskmanager) as 7cb7368e0616b93a97118bd3ea723dc8. Current number of registered hosts is 8. Current number of alive task slots is 16.
+2022-11-13 05:42:52,847 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager dbaab284acc0a4e719943c3457664378 has started.
+2022-11-13 05:42:53,365 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager eeabe9542d4a726eaa066aaf99bcf582 has started.
+2022-11-13 05:42:53,365 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:55030/user/taskmanager) as f6512bde247509cd39e566412e7997f4. Current number of registered hosts is 9. Current number of alive task slots is 18.
+2022-11-13 05:42:53,741 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:42751/user/taskmanager) as 7232184053569a7666ffa2fd49409702. Current number of registered hosts is 10. Current number of alive task slots is 20.
+2022-11-13 05:42:53,743 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager e65f6e899f5279bdced29108da77eeb1 has started.
+2022-11-13 05:42:54,248 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:53598/user/taskmanager) as 23808d2dcd35d55a2fce2d54c9419f82. Current number of registered hosts is 11. Current number of alive task slots is 22.
+2022-11-13 05:42:54,251 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 71390c4ebeb9ce5e7520e29d09db56a9 has started.
+2022-11-13 05:42:55,109 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager b1fb27bee45095ede6a515f8598cc549 has started.
+2022-11-13 05:42:55,109 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:37459/user/taskmanager) as d7ec8796ec1f2373d7a6a296364519a2. Current number of registered hosts is 12. Current number of alive task slots is 24.
+2022-11-13 05:42:55,626 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:41807/user/taskmanager) as cf3a0904da7a78eb631a89d02307479c. Current number of registered hosts is 13. Current number of alive task slots is 26.
+2022-11-13 05:42:55,626 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 5690afbd975cebacc95e18c354380dd9 has started.
+2022-11-13 05:42:56,038 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 789169aef554170b1a930dce3fe6fd52 has started.
+2022-11-13 05:42:56,038 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:35315/user/taskmanager) as 88799f0245f0d2ac0ef0c3dcabc08f6f. Current number of registered hosts is 14. Current number of alive task slots is 28.
+2022-11-13 05:42:56,494 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager c2d78fbfcf81890ba94ad5af533fd68f has started.
+2022-11-13 05:42:56,494 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:46793/user/taskmanager) as 1e377cb7cbb37937e3f777a0c77c2bd1. Current number of registered hosts is 15. Current number of alive task slots is 30.
+2022-11-13 05:42:56,976 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 78c9d58c280b876ba5d1909cd836529e has started.
+2022-11-13 05:42:56,976 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:45667/user/taskmanager) as 84500ad6a3741cb5a651fe91b0747863. Current number of registered hosts is 16. Current number of alive task slots is 32.
+2022-11-13 05:42:57,401 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:57634/user/taskmanager) as 3ba311bb2bba1e4ba71a957a576b4d26. Current number of registered hosts is 17. Current number of alive task slots is 34.
+2022-11-13 05:42:57,401 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 6fb469a7d71862a4b74f46e2f18811d2 has started.
+2022-11-13 05:42:57,923 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 39ca38c7044722b65ab61e1dd6d96cd4 has started.
+2022-11-13 05:42:57,924 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:41538/user/taskmanager) as b7cce1cc88329ab22e67d57b7a681d2d. Current number of registered hosts is 18. Current number of alive task slots is 36.
+2022-11-13 05:42:58,237 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 0c2ae0e9e6e37823be4fa706b7307d17 has started.
+2022-11-13 05:42:58,239 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:36342/user/taskmanager) as 439f1e28765e0a0636423952a7accc94. Current number of registered hosts is 19. Current number of alive task slots is 38.
+2022-11-13 05:42:58,723 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 00ec777d29697383a9bedcdfb4ec3e23 has started.
+2022-11-13 05:42:58,723 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:52755/user/taskmanager) as 10890d7fdfd788dd751632e17d4d71b0. Current number of registered hosts is 20. Current number of alive task slots is 40.
+2022-11-13 05:42:59,139 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 355d0fd5190dfdf9a2edfff97c28cfdf has started.
+2022-11-13 05:42:59,139 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:57278/user/taskmanager) as d5b9953ee09f1e9b73f394e793e67587. Current number of registered hosts is 21. Current number of alive task slots is 42.
+2022-11-13 05:42:59,590 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 2e76ac897d77a3fa702ead0af296306f has started.
+2022-11-13 05:42:59,591 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:34795/user/taskmanager) as e3c342efe4919503dab355112aafc782. Current number of registered hosts is 22. Current number of alive task slots is 44.
+2022-11-13 05:43:00,166 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ac3a104eefbc8c039f19f170a23ab6bd has started.
+2022-11-13 05:43:00,166 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:50725/user/taskmanager) as 6b2d07dfeecdb511b628ea3643e31860. Current number of registered hosts is 23. Current number of alive task slots is 46.
+2022-11-13 05:43:00,557 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 57f5497a0415518925c7f5be94620bd2 has started.
+2022-11-13 05:43:00,558 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:44345/user/taskmanager) as 5de08b01e96ffd084314cadd0556506e. Current number of registered hosts is 24. Current number of alive task slots is 48.
+2022-11-13 05:43:01,071 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 89de149ee00e1b85011b0f1af917f473 has started.
+2022-11-13 05:43:01,071 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:58777/user/taskmanager) as 67113513310b23c67fe1d001f18ab4f4. Current number of registered hosts is 25. Current number of alive task slots is 50.
+2022-11-13 05:43:01,494 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 27a744c0d50a12c51228db6f7b520f49 has started.
+2022-11-13 05:43:01,494 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:37826/user/taskmanager) as f1455afd2ed4fd5e378f8018ac8470f2. Current number of registered hosts is 26. Current number of alive task slots is 52.
+2022-11-13 05:43:02,008 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager f0bcb09e5e5018edfa464572f4ee687c has started.
+2022-11-13 05:43:02,008 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:57119/user/taskmanager) as b8dd2a8053e494e86dc7865234c5750c. Current number of registered hosts is 27. Current number of alive task slots is 54.
+2022-11-13 05:43:02,429 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 13c040ccb748468898a6ffcc80be34f5 has started.
+2022-11-13 05:43:02,429 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:51620/user/taskmanager) as 81093d0ed0578f929f3cda1daf01e2c2. Current number of registered hosts is 28. Current number of alive task slots is 56.
+2022-11-13 05:43:02,888 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ab7f625d1655420b3d4398c90b5a994a has started.
+2022-11-13 05:43:02,888 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:49593/user/taskmanager) as d3dcf4f6f0022cfb7e575af179d376e3. Current number of registered hosts is 29. Current number of alive task slots is 58.
+2022-11-13 05:43:03,408 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 37a5cab4fb95e404f946888ce3f80fbb has started.
+2022-11-13 05:43:03,409 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:47903/user/taskmanager) as 524708c5acae78c00b16e4494914a743. Current number of registered hosts is 30. Current number of alive task slots is 60.
+2022-11-13 05:43:03,854 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 4b3c2050ebfe6f6b3b0bb706e4bf4c16 has started.
+2022-11-13 05:43:03,854 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:45412/user/taskmanager) as b07ce0ea29248156ba451dee8de367ab. Current number of registered hosts is 31. Current number of alive task slots is 62.
+2022-11-13 05:43:03,887 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager eeff9a8659b85b22fef77bff2ae831ff has started.
+2022-11-13 05:43:03,887 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:53560/user/taskmanager) as a50bab97e17ea819f3bd8c7cabd6ca10. Current number of registered hosts is 32. Current number of alive task slots is 64.
+2022-11-13 05:43:04,409 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 18f993d9691e73990f6bcfcbb8b54883 has started.
+2022-11-13 05:43:04,409 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:40636/user/taskmanager) as 868c4aee39ea5ea56607a61f1cf1ee08. Current number of registered hosts is 33. Current number of alive task slots is 66.
+2022-11-13 05:43:04,680 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:45267/user/taskmanager) as 3425815b1626e5646ef6ef9d0f91f379. Current number of registered hosts is 34. Current number of alive task slots is 68.
+2022-11-13 05:43:04,680 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 7f7998d56c701c2381d6504e805e031b has started.
+2022-11-13 05:43:05,287 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 3cbb08ef7fa5b7c8290250a4819d3204 has started.
+2022-11-13 05:43:05,287 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:37348/user/taskmanager) as f1da003e7f18df6851c16597933be493. Current number of registered hosts is 35. Current number of alive task slots is 70.
+2022-11-13 05:43:06,259 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager bfd2897a50a17b1bbc0292e858b9ff1f has started.
+2022-11-13 05:43:06,259 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:33946/user/taskmanager) as c1563ccd59e2cf7bd33cb6129e0acaff. Current number of registered hosts is 36. Current number of alive task slots is 72.
+2022-11-13 05:43:06,693 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 9cf1ac9e22eda856444e98b783f5f32c has started.
+2022-11-13 05:43:06,693 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:50374/user/taskmanager) as 3ccc2f38725fd27390f70e3513cd6458. Current number of registered hosts is 37. Current number of alive task slots is 74.
+2022-11-13 05:43:07,152 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 89dfedfe505b2905a6a7ff78a679525b has started.
+2022-11-13 05:43:07,152 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:39084/user/taskmanager) as 41a9600ccadf2ac977e8804c34e629da. Current number of registered hosts is 38. Current number of alive task slots is 76.
+2022-11-13 05:43:07,591 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 8303896da41da714cb4028c02b7e07c9 has started.
+2022-11-13 05:43:07,591 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:59662/user/taskmanager) as 9ed5e7dd49d4716cdfc646151cf79f58. Current number of registered hosts is 39. Current number of alive task slots is 78.
+2022-11-13 05:43:07,997 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 839ec822694170798972b96c648f6442 has started.
+2022-11-13 05:43:07,997 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:58906/user/taskmanager) as 33f1451f95197fd340d1633a1b921d73. Current number of registered hosts is 40. Current number of alive task slots is 80.
+2022-11-13 05:43:08,568 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 320e9120295398ae1af6b27f72fb220b has started.
+2022-11-13 05:43:08,568 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:47856/user/taskmanager) as 56ec2c549e9c67513f8e6c1b02b78b08. Current number of registered hosts is 41. Current number of alive task slots is 82.
+2022-11-13 05:43:08,955 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager f823f6b313a91dbd42afbe9ad5944e6b has started.
+2022-11-13 05:43:08,955 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:35086/user/taskmanager) as 29acb66d192509acec6c74d10b5cb9ea. Current number of registered hosts is 42. Current number of alive task slots is 84.
+2022-11-13 05:43:09,458 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager f366d7870a6c59287cc6b3cf47a01bff has started.
+2022-11-13 05:43:09,458 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:51105/user/taskmanager) as ac5c9168928326efe13d6c6e9e575ad0. Current number of registered hosts is 43. Current number of alive task slots is 86.
+2022-11-13 05:43:09,852 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager a939bd9ed2f2c66c2634f1ccdd3dc100 has started.
+2022-11-13 05:43:09,853 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:35498/user/taskmanager) as 90d71741342ef47f2bc2688a53a2bc91. Current number of registered hosts is 44. Current number of alive task slots is 88.
+2022-11-13 05:43:10,220 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 8fe97ecc00302e9abc816f99983476aa has started.
+2022-11-13 05:43:10,220 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:33660/user/taskmanager) as 0aa76f086973916b47b2a4fb71d4ca8e. Current number of registered hosts is 45. Current number of alive task slots is 90.
+2022-11-13 05:43:10,575 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager 91e038c150a60b22ca1b4bbb43ad89ff has started.
+2022-11-13 05:43:10,575 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at VM-56-161-centos (akka.tcp://flink@vm-56-161-centos:44289/user/taskmanager) as 5b651c4bb3dbec0863cc3be2773ffe6e. Current number of registered hosts is 46. Current number of alive task slots is 92.
+2022-11-13 05:43:13,122 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Submitting job 886e9ddde07dd43182bf070e5028eab0 (Nexmark Query8).
+2022-11-13 05:43:13,129 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Using restart strategy NoRestartStrategy for 886e9ddde07dd43182bf070e5028eab0.
+2022-11-13 05:43:13,137 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Job recovers via failover strategy: full graph restart
+2022-11-13 05:43:13,145 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Running initialization on master for job Nexmark Query8 (886e9ddde07dd43182bf070e5028eab0).
+2022-11-13 05:43:13,146 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Successfully ran initialization on master in 0 ms.
+2022-11-13 05:43:13,158 INFO  org.apache.flink.runtime.jobmanager.JobManager                - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-11-13 05:43:13,163 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Scheduling job 886e9ddde07dd43182bf070e5028eab0 (Nexmark Query8).
+2022-11-13 05:43:13,164 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Job Nexmark Query8 (886e9ddde07dd43182bf070e5028eab0) switched from state CREATED to RUNNING.
+2022-11-13 05:43:13,164 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,169 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,169 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,169 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (3/11) (c3cd750bc4579165680f2dd308cc8829) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (4/11) (c03c33a093992eb1c1a294c3a67ba27b) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (5/11) (8c67b927f28ea0db2062632b7a783617) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (6/11) (478969e5d5b2e7ac4800ecccdf627f6f) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (8/11) (25a0e2284d12c6b038f199ebaec91e10) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (9/11) (1e11fa6e7fb70178bf326c1a3c41084f) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (10/11) (aac75f759f04097e44132a2b86d177dc) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,170 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (11/11) (021005d4d5d983c6b17970e7e32ede31) switched from CREATED to SCHEDULED.
+2022-11-13 05:43:13,172 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,174 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,177 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,177 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,178 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,178 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,181 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,181 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,181 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (3/11) (c3cd750bc4579165680f2dd308cc8829) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,181 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (3/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,182 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (4/11) (c03c33a093992eb1c1a294c3a67ba27b) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,182 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (4/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,182 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (5/11) (8c67b927f28ea0db2062632b7a783617) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,182 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (5/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,182 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (6/11) (478969e5d5b2e7ac4800ecccdf627f6f) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,182 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (6/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (8/11) (25a0e2284d12c6b038f199ebaec91e10) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (8/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (9/11) (1e11fa6e7fb70178bf326c1a3c41084f) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (9/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,183 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (10/11) (aac75f759f04097e44132a2b86d177dc) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,184 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (10/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,184 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (11/11) (021005d4d5d983c6b17970e7e32ede31) switched from SCHEDULED to DEPLOYING.
+2022-11-13 05:43:13,184 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (11/11) (attempt #0) to VM-56-161-centos
+2022-11-13 05:43:13,893 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (5/11) (8c67b927f28ea0db2062632b7a783617) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,913 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (3/11) (c3cd750bc4579165680f2dd308cc8829) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,934 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (9/11) (1e11fa6e7fb70178bf326c1a3c41084f) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,942 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (4/11) (c03c33a093992eb1c1a294c3a67ba27b) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,945 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (11/11) (021005d4d5d983c6b17970e7e32ede31) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,956 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,956 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,958 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,959 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:13,967 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (8/11) (25a0e2284d12c6b038f199ebaec91e10) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:14,022 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (6/11) (478969e5d5b2e7ac4800ecccdf627f6f) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:14,039 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:14,052 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (10/11) (aac75f759f04097e44132a2b86d177dc) switched from DEPLOYING to RUNNING.
+2022-11-13 05:46:21,290 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Trying to cancel job with ID 886e9ddde07dd43182bf070e5028eab0.
+2022-11-13 05:46:21,291 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Job Nexmark Query8 (886e9ddde07dd43182bf070e5028eab0) switched from state RUNNING to CANCELLING.
+2022-11-13 05:46:21,293 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (3/11) (c3cd750bc4579165680f2dd308cc8829) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (4/11) (c03c33a093992eb1c1a294c3a67ba27b) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (5/11) (8c67b927f28ea0db2062632b7a783617) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (6/11) (478969e5d5b2e7ac4800ecccdf627f6f) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (8/11) (25a0e2284d12c6b038f199ebaec91e10) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,296 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (9/11) (1e11fa6e7fb70178bf326c1a3c41084f) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,299 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (10/11) (aac75f759f04097e44132a2b86d177dc) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,299 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (11/11) (021005d4d5d983c6b17970e7e32ede31) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,325 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (5/11) (8c67b927f28ea0db2062632b7a783617) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,330 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (11/11) (021005d4d5d983c6b17970e7e32ede31) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,330 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (8/11) (25a0e2284d12c6b038f199ebaec91e10) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,332 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,332 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (3/11) (c3cd750bc4579165680f2dd308cc8829) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,335 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (4/11) (c03c33a093992eb1c1a294c3a67ba27b) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,336 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (6/11) (478969e5d5b2e7ac4800ecccdf627f6f) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,336 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (9/11) (1e11fa6e7fb70178bf326c1a3c41084f) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,341 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (10/11) (aac75f759f04097e44132a2b86d177dc) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,733 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (2/11) (f169036f2532404c7e4ad98a76b5aa2c) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,733 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (1/11) (7f32baf458fdbe862c971748e8c07d9e) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,733 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Auctions -> Timestamps/Watermarks -> Map (1/1) (75f57409fade7ce4b565741ce4800b6d) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,733 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Custom Source: Persons -> Timestamps/Watermarks -> Map (1/1) (1a51d6505de22a30f8e03a3d7038929d) switched from CANCELING to CANCELED.
+2022-11-13 05:46:22,733 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Job Nexmark Query8 (886e9ddde07dd43182bf070e5028eab0) switched from state CANCELLING to CANCELED.
+2022-11-13 05:46:22,733 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator     - Stopping checkpoint coordinator for job 886e9ddde07dd43182bf070e5028eab0
+2022-11-13 05:46:22,734 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore  - Shutting down
+2022-11-13 09:04:02,913 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:02,959 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,017 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,073 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,121 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - PUT operation failed
+java.lang.IllegalArgumentException: Invalid BLOB addressing for permanent BLOBs
+	at org.apache.flink.util.Preconditions.checkArgument(Preconditions.java:139)
+	at org.apache.flink.runtime.blob.BlobServerConnection.put(BlobServerConnection.java:337)
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:114)
+2022-11-13 09:04:03,170 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,207 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 105
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,240 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,258 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,318 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,363 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - GET operation from /9.135.219.108 failed.
+java.io.IOException: Unknown type of BLOB addressing: 1.
+	at org.apache.flink.runtime.blob.BlobServerConnection.get(BlobServerConnection.java:195)
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:117)
+2022-11-13 09:04:03,419 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,472 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 106
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,505 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,544 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 74
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,566 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-13 09:04:03,571 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-14 09:02:23,588 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-14 09:02:23,834 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-14 09:02:23,842 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-14 09:02:24,395 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 106
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-14 09:02:24,644 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-14 09:02:24,844 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-26 09:55:43,036 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-26 09:55:43,193 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - GET operation from /9.135.218.195 failed.
+java.io.IOException: Unknown type of BLOB addressing: 1.
+	at org.apache.flink.runtime.blob.BlobServerConnection.get(BlobServerConnection.java:195)
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:117)
+2022-11-26 09:55:43,335 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-26 09:55:43,336 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-26 09:55:43,596 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-26 09:55:44,450 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-11-26 09:55:44,488 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - PUT operation failed
+java.lang.IllegalArgumentException: Invalid BLOB addressing for permanent BLOBs
+	at org.apache.flink.util.Preconditions.checkArgument(Preconditions.java:139)
+	at org.apache.flink.runtime.blob.BlobServerConnection.put(BlobServerConnection.java:337)
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:114)
+2022-11-26 09:55:44,986 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 74
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:54,979 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,032 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,088 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,140 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 106
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,182 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,209 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 74
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,236 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,243 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,285 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,300 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 22
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,382 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 105
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,434 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,489 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - PUT operation failed
+java.lang.IllegalArgumentException: Invalid BLOB addressing for permanent BLOBs
+	at org.apache.flink.util.Preconditions.checkArgument(Preconditions.java:139)
+	at org.apache.flink.runtime.blob.BlobServerConnection.put(BlobServerConnection.java:337)
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:114)
+2022-12-03 09:06:55,534 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,587 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,631 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - Error while executing BLOB connection.
+java.io.IOException: Unknown operation 71
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:120)
+2022-12-03 09:06:55,684 ERROR org.apache.flink.runtime.blob.BlobServerConnection            - GET operation from /9.135.219.106 failed.
+java.io.IOException: Unknown type of BLOB addressing: 1.
+	at org.apache.flink.runtime.blob.BlobServerConnection.get(BlobServerConnection.java:195)
+	at org.apache.flink.runtime.blob.BlobServerConnection.run(BlobServerConnection.java:117)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/flink-examples-streaming_2.11-1.4.1-IncrementalLearning.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/IncrementalLearning.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/flink-examples-streaming_2.11-1.4.1-Iteration.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/Iteration.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/flink-examples-streaming_2.11-1.4.1-SessionWindowing.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/SessionWindowing.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/flink-examples-streaming_2.11-1.4.1-TopSpeedWindowing.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/TopSpeedWindowing.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/flink-examples-streaming_2.11-1.4.1-WindowJoin.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/WindowJoin.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/flink-examples-streaming_2.11-1.4.1-WordCount.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/WordCount.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/flink-examples-streaming_2.11-1.4.1-SocketWindowWordCount.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/target/SocketWindowWordCount.jar"/>
+</target>
+</project>

@@ -1,0 +1,5 @@
+org/apache/flink/orc/OrcTableSourceTest.class
+org/apache/flink/orc/OrcTableSourceITCase.class
+org/apache/flink/orc/OrcRowInputFormatTest.class
+org/apache/flink/orc/util/OrcTestFileGenerator.class
+org/apache/flink/orc/OrcBatchReaderTest.class

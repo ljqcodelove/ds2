@@ -1,0 +1,3 @@
+org/apache/flink/streaming/connectors/elasticsearch5/Elasticsearch5ApiCallBridge.class
+org/apache/flink/streaming/connectors/elasticsearch5/ElasticsearchSink.class
+org/apache/flink/streaming/connectors/elasticsearch5/Elasticsearch5ApiCallBridge$1.class

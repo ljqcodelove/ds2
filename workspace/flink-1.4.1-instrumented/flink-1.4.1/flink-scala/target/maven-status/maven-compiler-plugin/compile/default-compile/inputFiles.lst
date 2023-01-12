@@ -1,0 +1,5 @@
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-scala/src/main/java/org/apache/flink/api/scala/typeutils/TraversableSerializerConfigSnapshot.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-scala/src/main/java/org/apache/flink/api/scala/operators/ScalaAggregateOperator.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-scala/src/main/java/org/apache/flink/api/scala/typeutils/ScalaOptionSerializerConfigSnapshot.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-scala/src/main/java/org/apache/flink/api/scala/typeutils/ScalaTrySerializerConfigSnapshot.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-scala/src/main/java/org/apache/flink/api/scala/operators/ScalaCsvOutputFormat.java

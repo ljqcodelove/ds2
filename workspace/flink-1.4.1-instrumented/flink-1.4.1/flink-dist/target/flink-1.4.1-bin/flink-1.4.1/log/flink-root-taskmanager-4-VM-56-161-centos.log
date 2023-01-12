@@ -1,0 +1,221 @@
+2022-11-13 05:42:47,626 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-11-13 05:42:47,627 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Starting TaskManager (Version: 1.4.1, Rev:<unknown>, Date:<unknown>)
+2022-11-13 05:42:47,627 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  OS current user: root
+2022-11-13 05:42:47,810 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-11-13 05:42:47,995 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Current Hadoop/Kerberos user: root
+2022-11-13 05:42:47,995 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM: OpenJDK 64-Bit Server VM - Tencent - 1.8/25.292-b2
+2022-11-13 05:42:47,995 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Maximum heap size: 512 MiBytes
+2022-11-13 05:42:47,995 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JAVA_HOME: (not set)
+2022-11-13 05:42:47,997 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Hadoop version: 2.4.1
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM Options:
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:+UseG1GC
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xms512M
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xmx512M
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:MaxDirectMemorySize=8388607T
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog.file=/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-taskmanager-4-VM-56-161-centos.log
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog4j.configuration=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/log4j.properties
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlogback.configurationFile=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/logback.xml
+2022-11-13 05:42:47,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Program Arguments:
+2022-11-13 05:42:47,999 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     --configDir
+2022-11-13 05:42:47,999 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:42:47,999 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Classpath: :/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-dist_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-python_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-shaded-hadoop2-uber-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/log4j-1.2.17.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/slf4j-log4j12-1.7.7.jar:::
+2022-11-13 05:42:47,999 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-11-13 05:42:48,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Registered UNIX signal handlers for [TERM, HUP, INT]
+2022-11-13 05:42:48,004 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Maximum number of open file descriptors is 1000000
+2022-11-13 05:42:48,021 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Loading configuration from /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:42:48,024 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, 9.135.56.161
+2022-11-13 05:42:48,024 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2022-11-13 05:42:48,024 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.mb, 1024
+2022-11-13 05:42:48,025 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.mb, 512
+2022-11-13 05:42:48,025 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 2
+2022-11-13 05:42:48,025 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.memory.preallocate, false
+2022-11-13 05:42:48,025 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2022-11-13 05:42:48,025 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: web.port, 8081
+2022-11-13 05:42:48,025 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, filesystem
+2022-11-13 05:42:48,026 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, file:///root/dannylian/code/ds2/savepoints/
+2022-11-13 05:42:48,026 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: metrics.latency.interval, 10
+2022-11-13 05:42:48,078 INFO  org.apache.flink.runtime.security.modules.HadoopModule        - Hadoop user set to root (auth:SIMPLE)
+2022-11-13 05:42:48,118 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - Trying to select the network interface and address to use by connecting to the leading JobManager.
+2022-11-13 05:42:48,118 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+2022-11-13 05:42:48,120 INFO  org.apache.flink.runtime.net.ConnectionUtils                  - Retrieved new target address /9.135.56.161:6123.
+2022-11-13 05:42:48,122 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager will use hostname/address 'VM-56-161-centos' (127.0.0.1) for communication.
+2022-11-13 05:42:48,126 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager
+2022-11-13 05:42:48,126 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor system at VM-56-161-centos:34136.
+2022-11-13 05:42:48,127 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to start actor system at vm-56-161-centos:34136
+2022-11-13 05:42:48,471 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2022-11-13 05:42:48,523 INFO  akka.remote.Remoting                                          - Starting remoting
+2022-11-13 05:42:48,628 INFO  akka.remote.Remoting                                          - Remoting started; listening on addresses :[akka.tcp://flink@vm-56-161-centos:34136]
+2022-11-13 05:42:48,634 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Actor system started at akka.tcp://flink@vm-56-161-centos:34136
+2022-11-13 05:42:48,639 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl           - No metrics reporter configured, no metrics will be exposed/reported.
+2022-11-13 05:42:48,641 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor
+2022-11-13 05:42:48,644 INFO  org.apache.flink.runtime.io.network.netty.NettyConfig         - NettyConfig [server address: VM-56-161-centos/127.0.0.1, server port: 0, ssl enabled: false, memory segment size (bytes): 32768, transport type: NIO, number of server threads: 2 (manual), number of client threads: 2 (manual), server connect backlog: 0 (use Netty's default), client connect timeout (sec): 120, send/receive buffer size (bytes): 0 (use Netty's default)]
+2022-11-13 05:42:48,646 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerConfiguration  - Messages have a max timeout of 10000 ms
+2022-11-13 05:42:48,649 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Temporary file directory '/tmp': total 98 GB, usable 41 GB (41.84% usable)
+2022-11-13 05:42:48,690 INFO  org.apache.flink.runtime.io.network.buffer.NetworkBufferPool  - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+2022-11-13 05:42:48,787 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Client Proxy. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-11-13 05:42:48,787 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Server. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-11-13 05:42:48,788 INFO  org.apache.flink.runtime.io.network.NetworkEnvironment        - Starting the network environment and its components.
+2022-11-13 05:42:48,820 INFO  org.apache.flink.runtime.io.network.netty.NettyClient         - Successful initialization (took 25 ms).
+2022-11-13 05:42:51,827 WARN  org.apache.flink.shaded.netty4.io.netty.util.internal.ThreadLocalRandom  - Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+2022-11-13 05:42:51,844 INFO  org.apache.flink.runtime.io.network.netty.NettyServer         - Successful initialization (took 3024 ms). Listening on SocketAddress /127.0.0.1:50959.
+2022-11-13 05:42:51,898 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Limiting managed memory to 0.7 of the currently free heap space (308 MB), memory will be allocated lazily.
+2022-11-13 05:42:51,901 INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager          - I/O manager uses directory /tmp/flink-io-7a9d6be2-084b-412b-8136-1d3a1556b7e3 for spill files.
+2022-11-13 05:42:51,903 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-8af5de3e-01d4-48e6-b22c-6b98f37c9f15
+2022-11-13 05:42:51,969 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-a9ddbbd5-2eee-40ba-bbd9-bc134a77aeac
+2022-11-13 05:42:51,977 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor at akka://flink/user/taskmanager#-839031127.
+2022-11-13 05:42:51,977 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager data connection information: 69a860ab765d663127659beaa5460793 @ VM-56-161-centos (dataPort=50959)
+2022-11-13 05:42:51,977 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager has 2 task slot(s).
+2022-11-13 05:42:51,978 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Memory usage stats: [HEAP: 75/512/512 MB, NON HEAP: 32/32/-1 MB (used/committed/max)]
+2022-11-13 05:42:51,981 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to register at JobManager akka.tcp://flink@9.135.56.161:6123/user/jobmanager (attempt 1, timeout: 500 milliseconds)
+2022-11-13 05:42:52,096 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Successful registration at JobManager (akka.tcp://flink@9.135.56.161:6123/user/jobmanager), starting network stack and library cache.
+2022-11-13 05:42:52,099 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Determined BLOB server address to be /9.135.56.161:37938. Starting BLOB cache.
+2022-11-13 05:42:52,103 INFO  org.apache.flink.runtime.blob.PermanentBlobCache              - Created BLOB cache storage directory /tmp/blobStore-f1e1f982-62e5-4e24-8caa-db8cee1607c8
+2022-11-13 05:42:52,106 INFO  org.apache.flink.runtime.blob.TransientBlobCache              - Created BLOB cache storage directory /tmp/blobStore-0e44c7f9-136d-43b8-9910-e3ba90160503
+2022-11-13 05:43:13,258 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11)
+2022-11-13 05:43:13,259 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from CREATED to DEPLOYING.
+2022-11-13 05:43:13,259 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) [DEPLOYING]
+2022-11-13 05:43:13,265 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) [DEPLOYING].
+2022-11-13 05:43:13,268 INFO  org.apache.flink.runtime.blob.BlobClient                      - Downloading 886e9ddde07dd43182bf070e5028eab0/p-4da4978a57bf42a33a086aad57544f74ed58ce86-9f3fa0c2710fecbda8e9d9ee04d63910 from /9.135.56.161:37938
+2022-11-13 05:43:14,019 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) [DEPLOYING].
+2022-11-13 05:43:14,026 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from DEPLOYING to RUNNING.
+2022-11-13 05:43:14,038 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-11-13 05:43:14,224 WARN  org.apache.flink.metrics.MetricGroup                          - The operator name TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) exceeded the 80 characters length limit and was truncated.
+2022-11-13 05:43:14,242 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.
+2022-11-13 05:43:28,225 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%50%1668289408225%1668289408175%0%6
+2022-11-13 05:43:30,197 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%22%1668289410197%1668289410175%0%6
+2022-11-13 05:44:04,197 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%20%1668289444197%1668289444175%0%6
+2022-11-13 05:44:08,283 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%108%1668289448283%1668289448175%0%6
+2022-11-13 05:44:14,251 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%76%1668289454251%1668289454175%0%6
+2022-11-13 05:44:40,233 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%58%1668289480233%1668289480175%0%6
+2022-11-13 05:44:42,191 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%16%1668289482191%1668289482175%0%6
+2022-11-13 05:44:42,262 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%87%1668289482262%1668289482175%0%6
+2022-11-13 05:44:44,282 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%107%1668289484282%1668289484175%0%6
+2022-11-13 05:44:46,190 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%15%1668289486190%1668289486175%0%6
+2022-11-13 05:44:48,231 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%56%1668289488231%1668289488175%0%6
+2022-11-13 05:44:54,530 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%355%1668289494530%1668289494175%0%6
+2022-11-13 05:45:00,526 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%351%1668289500526%1668289500175%0%6
+2022-11-13 05:45:14,824 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%649%1668289514824%1668289514175%0%6
+2022-11-13 05:45:26,262 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%87%1668289526262%1668289526175%0%6
+2022-11-13 05:45:28,789 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%614%1668289528789%1668289528175%0%6
+2022-11-13 05:45:32,917 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%742%1668289532917%1668289532175%0%6
+2022-11-13 05:45:42,978 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%803%1668289542978%1668289542175%0%6
+2022-11-13 05:46:00,768 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%593%1668289560768%1668289560175%0%6
+2022-11-13 05:46:15,078 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%903%1668289575078%1668289574175%0%6
+2022-11-13 05:46:20,992 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%817%1668289580992%1668289580175%0%6
+2022-11-13 05:46:21,299 INFO  org.apache.flink.runtime.taskmanager.Task                     - Attempting to cancel task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29).
+2022-11-13 05:46:21,303 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from RUNNING to CANCELING.
+2022-11-13 05:46:21,308 INFO  org.apache.flink.runtime.taskmanager.Task                     - Triggering cancellation of task code TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29).
+2022-11-13 05:46:21,316 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) switched from CANCELING to CANCELED.
+2022-11-13 05:46:21,317 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29).
+2022-11-13 05:46:21,326 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (bc44c6cf4f96c69eb62d176563e4eb29) [CANCELED]
+2022-11-13 05:46:21,328 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state CANCELED to JobManager for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (bc44c6cf4f96c69eb62d176563e4eb29)
+2022-11-13 09:18:52,736 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43191] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1784969076 - discarded
+2022-11-13 09:18:52,804 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43235] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1245992788 - discarded
+2022-11-13 09:18:52,887 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43267] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-13 09:18:52,991 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43298] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-13 09:18:53,030 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43319] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 16844079 - discarded
+2022-11-13 09:18:53,057 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43329] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-13 09:18:53,233 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43378] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-13 09:18:53,240 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43394] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-13 09:18:53,782 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43229] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-13 09:18:53,891 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43247] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-13 09:18:54,085 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43338] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-13 09:18:54,131 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43359] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-13 09:18:54,437 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:43432] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 11:11:30,559 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46564] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 11:11:30,760 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46571] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 11:11:30,811 ERROR akka.actor.OneForOneStrategy                                  - Error while decoding incoming Akka PDU of length: 164
+akka.remote.transport.AkkaProtocolException: Error while decoding incoming Akka PDU of length: 164
+Caused by: akka.remote.transport.PduCodecException: Decoding PDU failed.
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:173)
+	at akka.remote.transport.ProtocolStateActor.akka$remote$transport$ProtocolStateActor$$decodePdu(AkkaProtocolTransport.scala:657)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:411)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:374)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at akka.actor.FSM$class.processEvent(FSM.scala:663)
+	at akka.remote.transport.ProtocolStateActor.processEvent(AkkaProtocolTransport.scala:285)
+	at akka.actor.FSM$class.akka$actor$FSM$$processMsg(FSM.scala:657)
+	at akka.actor.FSM$$anonfun$receive$1.applyOrElse(FSM.scala:651)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:502)
+	at akka.remote.transport.ProtocolStateActor.aroundReceive(AkkaProtocolTransport.scala:285)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:526)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:495)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: akka.protobuf.InvalidProtocolBufferException: Protocol message tag had invalid wire type.
+	at akka.protobuf.InvalidProtocolBufferException.invalidWireType(InvalidProtocolBufferException.java:99)
+	at akka.protobuf.UnknownFieldSet$Builder.mergeFieldFrom(UnknownFieldSet.java:498)
+	at akka.protobuf.GeneratedMessage.parseUnknownField(GeneratedMessage.java:193)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7179)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7137)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7233)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7228)
+	at akka.protobuf.AbstractParser.parsePartialFrom(AbstractParser.java:141)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:177)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:188)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:193)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:49)
+	at akka.remote.WireFormats$AkkaProtocolMessage.parseFrom(WireFormats.java:7351)
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:174)
+	... 19 more
+2022-11-19 11:11:31,007 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46582] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1768842867 - discarded
+2022-11-19 11:11:31,063 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46584] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 16844079 - discarded
+2022-11-19 11:11:31,326 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46596] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 11:11:31,661 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46566] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1784969076 - discarded
+2022-11-19 11:11:32,218 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46593] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-19 11:11:32,467 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46658] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-19 11:11:32,562 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.218.195:46661] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-22 10:09:56,651 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50202] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-22 10:09:56,670 ERROR akka.actor.OneForOneStrategy                                  - Error while decoding incoming Akka PDU of length: 164
+akka.remote.transport.AkkaProtocolException: Error while decoding incoming Akka PDU of length: 164
+Caused by: akka.remote.transport.PduCodecException: Decoding PDU failed.
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:173)
+	at akka.remote.transport.ProtocolStateActor.akka$remote$transport$ProtocolStateActor$$decodePdu(AkkaProtocolTransport.scala:657)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:411)
+	at akka.remote.transport.ProtocolStateActor$$anonfun$3.applyOrElse(AkkaProtocolTransport.scala:374)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at akka.actor.FSM$class.processEvent(FSM.scala:663)
+	at akka.remote.transport.ProtocolStateActor.processEvent(AkkaProtocolTransport.scala:285)
+	at akka.actor.FSM$class.akka$actor$FSM$$processMsg(FSM.scala:657)
+	at akka.actor.FSM$$anonfun$receive$1.applyOrElse(FSM.scala:651)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:502)
+	at akka.remote.transport.ProtocolStateActor.aroundReceive(AkkaProtocolTransport.scala:285)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:526)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:495)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: akka.protobuf.InvalidProtocolBufferException: Protocol message tag had invalid wire type.
+	at akka.protobuf.InvalidProtocolBufferException.invalidWireType(InvalidProtocolBufferException.java:99)
+	at akka.protobuf.UnknownFieldSet$Builder.mergeFieldFrom(UnknownFieldSet.java:498)
+	at akka.protobuf.GeneratedMessage.parseUnknownField(GeneratedMessage.java:193)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7179)
+	at akka.remote.WireFormats$AkkaProtocolMessage.<init>(WireFormats.java:7137)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7233)
+	at akka.remote.WireFormats$AkkaProtocolMessage$1.parsePartialFrom(WireFormats.java:7228)
+	at akka.protobuf.AbstractParser.parsePartialFrom(AbstractParser.java:141)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:177)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:188)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:193)
+	at akka.protobuf.AbstractParser.parseFrom(AbstractParser.java:49)
+	at akka.remote.WireFormats$AkkaProtocolMessage.parseFrom(WireFormats.java:7351)
+	at akka.remote.transport.AkkaPduProtobufCodec$.decodePdu(AkkaPduCodec.scala:174)
+	... 19 more
+2022-11-22 10:09:56,707 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50229] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-22 10:09:56,710 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50233] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-22 10:09:56,772 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50250] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 369295621 - discarded
+2022-11-22 10:09:56,811 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50255] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1768842867 - discarded
+2022-11-22 10:09:56,955 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50295] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 16844079 - discarded
+2022-11-22 10:09:57,045 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50311] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded
+2022-11-22 10:09:57,093 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50325] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1784969076 - discarded
+2022-11-22 10:09:57,159 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50348] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1245992788 - discarded
+2022-11-22 10:09:57,907 WARN  akka.remote.transport.netty.NettyTransport                    - Remote connection to [/9.135.219.106:50268] failed with org.apache.flink.shaded.akka.org.jboss.netty.handler.codec.frame.TooLongFrameException: Adjusted frame length exceeds 10485760: 1195725860 - discarded

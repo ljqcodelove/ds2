@@ -1,0 +1,3 @@
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-elasticsearch/src/test/java/org/apache/flink/streaming/connectors/elasticsearch/EmbeddedElasticsearchNodeEnvironmentImpl.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-elasticsearch/src/test/java/org/apache/flink/streaming/connectors/elasticsearch/examples/ElasticsearchSinkExample.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-elasticsearch/src/test/java/org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSinkITCase.java

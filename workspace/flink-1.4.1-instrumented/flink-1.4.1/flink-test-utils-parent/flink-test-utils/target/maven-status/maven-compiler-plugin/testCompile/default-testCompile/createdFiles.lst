@@ -1,0 +1,4 @@
+org/apache/flink/networking/EchoServer$EchoWorkerThread.class
+org/apache/flink/networking/NetworkFailuresProxyTest$EchoClient.class
+org/apache/flink/networking/NetworkFailuresProxyTest.class
+org/apache/flink/networking/EchoServer.class

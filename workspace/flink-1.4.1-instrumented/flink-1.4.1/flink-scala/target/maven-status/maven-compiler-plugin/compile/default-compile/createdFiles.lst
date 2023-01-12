@@ -1,0 +1,6 @@
+org/apache/flink/api/scala/operators/ScalaAggregateOperator$AggregatingUdf.class
+org/apache/flink/api/scala/typeutils/TraversableSerializerConfigSnapshot.class
+org/apache/flink/api/scala/operators/ScalaCsvOutputFormat.class
+org/apache/flink/api/scala/operators/ScalaAggregateOperator.class
+org/apache/flink/api/scala/typeutils/ScalaTrySerializerConfigSnapshot.class
+org/apache/flink/api/scala/typeutils/ScalaOptionSerializerConfigSnapshot.class

@@ -1,0 +1,125 @@
+2022-04-29 10:49:15,609 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-04-29 10:49:15,610 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Starting TaskManager (Version: 1.4.1, Rev:<unknown>, Date:<unknown>)
+2022-04-29 10:49:15,610 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  OS current user: root
+2022-04-29 10:49:15,812 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-04-29 10:49:15,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Current Hadoop/Kerberos user: root
+2022-04-29 10:49:15,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM: OpenJDK 64-Bit Server VM - Tencent - 1.8/25.292-b2
+2022-04-29 10:49:15,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Maximum heap size: 512 MiBytes
+2022-04-29 10:49:15,998 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JAVA_HOME: (not set)
+2022-04-29 10:49:16,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Hadoop version: 2.4.1
+2022-04-29 10:49:16,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM Options:
+2022-04-29 10:49:16,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:+UseG1GC
+2022-04-29 10:49:16,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xms512M
+2022-04-29 10:49:16,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xmx512M
+2022-04-29 10:49:16,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:MaxDirectMemorySize=8388607T
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog.file=/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-taskmanager-48-VM-56-161-centos.log
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog4j.configuration=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/log4j.properties
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlogback.configurationFile=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/logback.xml
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Program Arguments:
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     --configDir
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Classpath: :/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-dist_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-python_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-shaded-hadoop2-uber-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/log4j-1.2.17.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/slf4j-log4j12-1.7.7.jar:::
+2022-04-29 10:49:16,001 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-04-29 10:49:16,002 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Registered UNIX signal handlers for [TERM, HUP, INT]
+2022-04-29 10:49:16,006 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Maximum number of open file descriptors is 1000000
+2022-04-29 10:49:16,020 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Loading configuration from /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-04-29 10:49:16,022 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, 9.135.56.161
+2022-04-29 10:49:16,022 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2022-04-29 10:49:16,023 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.mb, 1024
+2022-04-29 10:49:16,023 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.mb, 512
+2022-04-29 10:49:16,023 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 2
+2022-04-29 10:49:16,023 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.memory.preallocate, false
+2022-04-29 10:49:16,023 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2022-04-29 10:49:16,023 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: web.port, 8081
+2022-04-29 10:49:16,024 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, filesystem
+2022-04-29 10:49:16,024 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, file:///root/dannylian/code/ds2/savepoints/
+2022-04-29 10:49:16,067 INFO  org.apache.flink.runtime.security.modules.HadoopModule        - Hadoop user set to root (auth:SIMPLE)
+2022-04-29 10:49:16,108 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - Trying to select the network interface and address to use by connecting to the leading JobManager.
+2022-04-29 10:49:16,108 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+2022-04-29 10:49:16,110 INFO  org.apache.flink.runtime.net.ConnectionUtils                  - Retrieved new target address /9.135.56.161:6123.
+2022-04-29 10:49:16,114 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager will use hostname/address 'VM-56-161-centos' (127.0.0.1) for communication.
+2022-04-29 10:49:16,117 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager
+2022-04-29 10:49:16,118 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor system at VM-56-161-centos:38269.
+2022-04-29 10:49:16,119 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to start actor system at vm-56-161-centos:38269
+2022-04-29 10:49:16,511 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2022-04-29 10:49:16,580 INFO  akka.remote.Remoting                                          - Starting remoting
+2022-04-29 10:49:16,702 INFO  akka.remote.Remoting                                          - Remoting started; listening on addresses :[akka.tcp://flink@vm-56-161-centos:38269]
+2022-04-29 10:49:16,713 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Actor system started at akka.tcp://flink@vm-56-161-centos:38269
+2022-04-29 10:49:16,730 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl           - No metrics reporter configured, no metrics will be exposed/reported.
+2022-04-29 10:49:16,732 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor
+2022-04-29 10:49:16,736 INFO  org.apache.flink.runtime.io.network.netty.NettyConfig         - NettyConfig [server address: VM-56-161-centos/127.0.0.1, server port: 0, ssl enabled: false, memory segment size (bytes): 32768, transport type: NIO, number of server threads: 2 (manual), number of client threads: 2 (manual), server connect backlog: 0 (use Netty's default), client connect timeout (sec): 120, send/receive buffer size (bytes): 0 (use Netty's default)]
+2022-04-29 10:49:16,739 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerConfiguration  - Messages have a max timeout of 10000 ms
+2022-04-29 10:49:16,742 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Temporary file directory '/tmp': total 98 GB, usable 36 GB (36.73% usable)
+2022-04-29 10:49:16,794 INFO  org.apache.flink.runtime.io.network.buffer.NetworkBufferPool  - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+2022-04-29 10:49:16,905 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Client Proxy. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-04-29 10:49:16,905 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Server. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-04-29 10:49:16,905 INFO  org.apache.flink.runtime.io.network.NetworkEnvironment        - Starting the network environment and its components.
+2022-04-29 10:49:16,939 INFO  org.apache.flink.runtime.io.network.netty.NettyClient         - Successful initialization (took 29 ms).
+2022-04-29 10:49:19,957 WARN  org.apache.flink.shaded.netty4.io.netty.util.internal.ThreadLocalRandom  - Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+2022-04-29 10:49:19,973 INFO  org.apache.flink.runtime.io.network.netty.NettyServer         - Successful initialization (took 3034 ms). Listening on SocketAddress /127.0.0.1:58445.
+2022-04-29 10:49:20,016 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Limiting managed memory to 0.7 of the currently free heap space (307 MB), memory will be allocated lazily.
+2022-04-29 10:49:20,019 INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager          - I/O manager uses directory /tmp/flink-io-2c514c31-ee21-49e4-9568-2686f40f99a3 for spill files.
+2022-04-29 10:49:20,021 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-45dff0c0-47c4-40ac-8d96-006cca6638c5
+2022-04-29 10:49:20,064 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-7b58622d-a353-4289-8c64-b6b9eaac8a51
+2022-04-29 10:49:20,072 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor at akka://flink/user/taskmanager#1372948370.
+2022-04-29 10:49:20,072 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager data connection information: 7276f2c330164085ff36d3dd563b2505 @ VM-56-161-centos (dataPort=58445)
+2022-04-29 10:49:20,073 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager has 2 task slot(s).
+2022-04-29 10:49:20,073 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Memory usage stats: [HEAP: 76/512/512 MB, NON HEAP: 32/32/-1 MB (used/committed/max)]
+2022-04-29 10:49:20,076 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to register at JobManager akka.tcp://flink@9.135.56.161:6123/user/jobmanager (attempt 1, timeout: 500 milliseconds)
+2022-04-29 10:49:20,159 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Successful registration at JobManager (akka.tcp://flink@9.135.56.161:6123/user/jobmanager), starting network stack and library cache.
+2022-04-29 10:49:20,162 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Determined BLOB server address to be /9.135.56.161:47739. Starting BLOB cache.
+2022-04-29 10:49:20,166 INFO  org.apache.flink.runtime.blob.PermanentBlobCache              - Created BLOB cache storage directory /tmp/blobStore-0ad4b04f-3cfe-496d-90dd-d2e3678e6b2a
+2022-04-29 10:49:20,168 INFO  org.apache.flink.runtime.blob.TransientBlobCache              - Created BLOB cache storage directory /tmp/blobStore-114228c3-d59f-4a11-a36e-6928002dd508
+2022-04-29 10:49:28,005 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task Sliding Window -> DummyLatencySink (50/55)
+2022-04-29 10:49:28,023 INFO  org.apache.flink.runtime.taskmanager.Task                     - Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) switched from CREATED to DEPLOYING.
+2022-04-29 10:49:28,023 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) [DEPLOYING]
+2022-04-29 10:49:28,076 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) [DEPLOYING].
+2022-04-29 10:49:28,086 INFO  org.apache.flink.runtime.blob.BlobClient                      - Downloading 7a987cd9cbcdc9f780af16827af2c889/p-d1679e352d9c3b188b1c4d4563e0c75362345d04-79e62801ec8e3e54a336a287044f6ee6 from /9.135.56.161:47739
+2022-04-29 10:49:30,935 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) [DEPLOYING].
+2022-04-29 10:49:30,955 INFO  org.apache.flink.runtime.taskmanager.Task                     - Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) switched from DEPLOYING to RUNNING.
+2022-04-29 10:49:30,997 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-04-29 10:49:31,542 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.
+2022-04-29 10:50:38,774 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Heap backend snapshot (File Stream Factory @ /root/dannylian/code/ds2/savepoints/savepoint-7a987c-0c934c2cb012, synchronous part) in thread Thread[Sliding Window -> DummyLatencySink (50/55),5,Flink Task Threads] took 4 ms.
+2022-04-29 10:50:39,294 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Heap backend snapshot (File Stream Factory @ /root/dannylian/code/ds2/savepoints/savepoint-7a987c-0c934c2cb012, asynchronous part) in thread Thread[pool-4-thread-1,5,Flink Task Threads] took 430 ms.
+2022-04-29 10:50:40,208 INFO  org.apache.flink.runtime.taskmanager.Task                     - Attempting to cancel task Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824).
+2022-04-29 10:50:40,217 INFO  org.apache.flink.runtime.taskmanager.Task                     - Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) switched from RUNNING to CANCELING.
+2022-04-29 10:50:40,229 INFO  org.apache.flink.runtime.taskmanager.Task                     - Triggering cancellation of task code Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824).
+2022-04-29 10:50:40,338 INFO  org.apache.flink.runtime.taskmanager.Task                     - Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) switched from CANCELING to CANCELED.
+2022-04-29 10:50:40,338 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824).
+2022-04-29 10:50:40,359 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task Sliding Window -> DummyLatencySink (50/55) (c91ff3ad7c11bd0219c3d4ba0d44e824) [CANCELED]
+2022-04-29 10:50:40,360 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state CANCELED to JobManager for task Sliding Window -> DummyLatencySink (c91ff3ad7c11bd0219c3d4ba0d44e824)
+2022-04-29 10:50:43,742 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task Sliding Window -> DummyLatencySink (49/68)
+2022-04-29 10:50:43,756 INFO  org.apache.flink.runtime.taskmanager.Task                     - Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb) switched from CREATED to DEPLOYING.
+2022-04-29 10:50:43,756 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb) [DEPLOYING]
+2022-04-29 10:50:43,760 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb) [DEPLOYING].
+2022-04-29 10:50:43,761 INFO  org.apache.flink.runtime.blob.BlobClient                      - Downloading 90473826974cef245a66812976b953c1/p-d1679e352d9c3b188b1c4d4563e0c75362345d04-47683830ab35412ed4281b9d6c96fdd4 from /9.135.56.161:47739
+2022-04-29 10:51:32,149 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb) [DEPLOYING].
+2022-04-29 10:51:32,150 INFO  org.apache.flink.runtime.taskmanager.Task                     - Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb) switched from DEPLOYING to RUNNING.
+2022-04-29 10:51:32,151 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-04-29 10:51:41,054 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.
+2022-04-29 10:51:41,054 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend from snapshot.
+2022-04-29 10:51:55,445 INFO  org.apache.flink.runtime.taskmanager.Task                     - Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb) switched from RUNNING to FAILED.
+org.apache.flink.runtime.io.network.netty.exception.RemoteTransportException: Connection unexpectedly closed by remote task manager 'VM-56-161-centos/127.0.0.1:40089'. This might indicate that the remote task manager was lost.
+	at org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler.channelInactive(PartitionRequestClientHandler.java:117)
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at org.apache.flink.shaded.netty4.io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at org.apache.flink.shaded.netty4.io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:294)
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:237)
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:223)
+	at org.apache.flink.shaded.netty4.io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:829)
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:610)
+	at org.apache.flink.shaded.netty4.io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:357)
+	at org.apache.flink.shaded.netty4.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at org.apache.flink.shaded.netty4.io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-29 10:51:55,575 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb).
+2022-04-29 10:51:55,598 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task Sliding Window -> DummyLatencySink (49/68) (1b592a7b5182e084056a564fe5e510eb) [FAILED]
+2022-04-29 10:51:55,598 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state FAILED to JobManager for task Sliding Window -> DummyLatencySink (1b592a7b5182e084056a564fe5e510eb)
+2022-04-29 10:51:55,690 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Discarding the results produced by task execution 1b592a7b5182e084056a564fe5e510eb
+2022-04-29 10:52:54,000 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - RECEIVED SIGNAL 15: SIGTERM. Shutting down as requested.
+2022-04-29 10:52:54,001 INFO  org.apache.flink.runtime.blob.PermanentBlobCache              - Shutting down BLOB cache
+2022-04-29 10:52:54,003 INFO  org.apache.flink.runtime.blob.TransientBlobCache              - Shutting down BLOB cache
+2022-04-29 10:52:54,005 INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager          - I/O manager removed spill file directory /tmp/flink-io-2c514c31-ee21-49e4-9568-2686f40f99a3

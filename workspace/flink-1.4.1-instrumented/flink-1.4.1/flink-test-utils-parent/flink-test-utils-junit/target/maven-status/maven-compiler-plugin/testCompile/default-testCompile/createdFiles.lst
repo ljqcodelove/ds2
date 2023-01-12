@@ -1,0 +1,3 @@
+org/apache/flink/core/testutils/OneShotLatchTest.class
+org/apache/flink/testutils/junit/RetryOnFailureTest.class
+org/apache/flink/testutils/junit/RetryOnExceptionTest.class

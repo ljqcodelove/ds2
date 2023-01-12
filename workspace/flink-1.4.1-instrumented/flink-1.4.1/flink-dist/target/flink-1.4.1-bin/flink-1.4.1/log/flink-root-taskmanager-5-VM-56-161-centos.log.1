@@ -1,0 +1,115 @@
+2022-11-13 05:38:38,171 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-11-13 05:38:38,173 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Starting TaskManager (Version: 1.4.1, Rev:<unknown>, Date:<unknown>)
+2022-11-13 05:38:38,173 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  OS current user: root
+2022-11-13 05:38:38,352 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-11-13 05:38:38,495 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Current Hadoop/Kerberos user: root
+2022-11-13 05:38:38,496 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM: OpenJDK 64-Bit Server VM - Tencent - 1.8/25.292-b2
+2022-11-13 05:38:38,496 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Maximum heap size: 512 MiBytes
+2022-11-13 05:38:38,496 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JAVA_HOME: (not set)
+2022-11-13 05:38:38,497 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Hadoop version: 2.4.1
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  JVM Options:
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:+UseG1GC
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xms512M
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Xmx512M
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -XX:MaxDirectMemorySize=8388607T
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog.file=/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-taskmanager-5-VM-56-161-centos.log
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlog4j.configuration=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/log4j.properties
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     -Dlogback.configurationFile=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/logback.xml
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Program Arguments:
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     --configDir
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -     /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              -  Classpath: :/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-dist_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-python_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-shaded-hadoop2-uber-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/log4j-1.2.17.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/slf4j-log4j12-1.7.7.jar:::
+2022-11-13 05:38:38,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - --------------------------------------------------------------------------------
+2022-11-13 05:38:38,499 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Registered UNIX signal handlers for [TERM, HUP, INT]
+2022-11-13 05:38:38,502 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Maximum number of open file descriptors is 1000000
+2022-11-13 05:38:38,516 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Loading configuration from /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:38:38,518 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, 9.135.56.161
+2022-11-13 05:38:38,518 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2022-11-13 05:38:38,518 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.mb, 1024
+2022-11-13 05:38:38,519 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.mb, 512
+2022-11-13 05:38:38,519 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 2
+2022-11-13 05:38:38,519 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.memory.preallocate, false
+2022-11-13 05:38:38,519 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2022-11-13 05:38:38,519 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: web.port, 8081
+2022-11-13 05:38:38,519 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, filesystem
+2022-11-13 05:38:38,519 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, file:///root/dannylian/code/ds2/savepoints/
+2022-11-13 05:38:38,520 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: metrics.latency.interval, 10
+2022-11-13 05:38:38,555 INFO  org.apache.flink.runtime.security.modules.HadoopModule        - Hadoop user set to root (auth:SIMPLE)
+2022-11-13 05:38:38,597 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - Trying to select the network interface and address to use by connecting to the leading JobManager.
+2022-11-13 05:38:38,597 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+2022-11-13 05:38:38,599 INFO  org.apache.flink.runtime.net.ConnectionUtils                  - Retrieved new target address /9.135.56.161:6123.
+2022-11-13 05:38:38,601 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager will use hostname/address 'VM-56-161-centos' (127.0.0.1) for communication.
+2022-11-13 05:38:38,604 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager
+2022-11-13 05:38:38,604 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor system at VM-56-161-centos:46067.
+2022-11-13 05:38:38,605 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to start actor system at vm-56-161-centos:46067
+2022-11-13 05:38:38,958 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2022-11-13 05:38:39,015 INFO  akka.remote.Remoting                                          - Starting remoting
+2022-11-13 05:38:39,109 INFO  akka.remote.Remoting                                          - Remoting started; listening on addresses :[akka.tcp://flink@vm-56-161-centos:46067]
+2022-11-13 05:38:39,116 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Actor system started at akka.tcp://flink@vm-56-161-centos:46067
+2022-11-13 05:38:39,121 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl           - No metrics reporter configured, no metrics will be exposed/reported.
+2022-11-13 05:38:39,123 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor
+2022-11-13 05:38:39,127 INFO  org.apache.flink.runtime.io.network.netty.NettyConfig         - NettyConfig [server address: VM-56-161-centos/127.0.0.1, server port: 0, ssl enabled: false, memory segment size (bytes): 32768, transport type: NIO, number of server threads: 2 (manual), number of client threads: 2 (manual), server connect backlog: 0 (use Netty's default), client connect timeout (sec): 120, send/receive buffer size (bytes): 0 (use Netty's default)]
+2022-11-13 05:38:39,129 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerConfiguration  - Messages have a max timeout of 10000 ms
+2022-11-13 05:38:39,132 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Temporary file directory '/tmp': total 98 GB, usable 41 GB (41.84% usable)
+2022-11-13 05:38:39,180 INFO  org.apache.flink.runtime.io.network.buffer.NetworkBufferPool  - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+2022-11-13 05:38:39,289 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Client Proxy. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-11-13 05:38:39,289 WARN  org.apache.flink.runtime.query.QueryableStateUtils            - Could not load Queryable State Server. Probable reason: flink-queryable-state-runtime is not in the classpath. Please put the corresponding jar from the opt to the lib folder.
+2022-11-13 05:38:39,290 INFO  org.apache.flink.runtime.io.network.NetworkEnvironment        - Starting the network environment and its components.
+2022-11-13 05:38:39,321 INFO  org.apache.flink.runtime.io.network.netty.NettyClient         - Successful initialization (took 26 ms).
+2022-11-13 05:38:42,330 WARN  org.apache.flink.shaded.netty4.io.netty.util.internal.ThreadLocalRandom  - Failed to generate a seed from SecureRandom within 3 seconds. Not enough entrophy?
+2022-11-13 05:38:42,354 INFO  org.apache.flink.runtime.io.network.netty.NettyServer         - Successful initialization (took 3032 ms). Listening on SocketAddress /127.0.0.1:58075.
+2022-11-13 05:38:42,416 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Limiting managed memory to 0.7 of the currently free heap space (308 MB), memory will be allocated lazily.
+2022-11-13 05:38:42,420 INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager          - I/O manager uses directory /tmp/flink-io-b60eee37-a01e-4d61-9e6c-570f81ad91d0 for spill files.
+2022-11-13 05:38:42,422 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-fcd16043-b4e7-4e23-964e-7ef7914e9a3a
+2022-11-13 05:38:42,484 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory /tmp/flink-dist-cache-ed5b9f8b-f3c5-4d10-9b61-2d0a490d2cc5
+2022-11-13 05:38:42,494 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Starting TaskManager actor at akka://flink/user/taskmanager#-463815284.
+2022-11-13 05:38:42,494 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager data connection information: 23c87a626cbe555a5867e01df6919a0b @ VM-56-161-centos (dataPort=58075)
+2022-11-13 05:38:42,494 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - TaskManager has 2 task slot(s).
+2022-11-13 05:38:42,495 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Memory usage stats: [HEAP: 75/512/512 MB, NON HEAP: 32/32/-1 MB (used/committed/max)]
+2022-11-13 05:38:42,498 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Trying to register at JobManager akka.tcp://flink@9.135.56.161:6123/user/jobmanager (attempt 1, timeout: 500 milliseconds)
+2022-11-13 05:38:42,621 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Successful registration at JobManager (akka.tcp://flink@9.135.56.161:6123/user/jobmanager), starting network stack and library cache.
+2022-11-13 05:38:42,625 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Determined BLOB server address to be /9.135.56.161:34693. Starting BLOB cache.
+2022-11-13 05:38:42,628 INFO  org.apache.flink.runtime.blob.PermanentBlobCache              - Created BLOB cache storage directory /tmp/blobStore-c8a38057-adde-43cd-88a2-39f9dc932cb9
+2022-11-13 05:38:42,631 INFO  org.apache.flink.runtime.blob.TransientBlobCache              - Created BLOB cache storage directory /tmp/blobStore-2a28100a-6963-4bbd-b771-8375089c7fbb
+2022-11-13 05:39:04,339 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Received task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11)
+2022-11-13 05:39:04,339 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) switched from CREATED to DEPLOYING.
+2022-11-13 05:39:04,340 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) [DEPLOYING]
+2022-11-13 05:39:04,344 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) [DEPLOYING].
+2022-11-13 05:39:04,346 INFO  org.apache.flink.runtime.blob.BlobClient                      - Downloading ed8f21ec203ff97f47afabd34f72748d/p-4da4978a57bf42a33a086aad57544f74ed58ce86-93f01f23111746d321767b7d6d875ac2 from /9.135.56.161:34693
+2022-11-13 05:39:04,997 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) [DEPLOYING].
+2022-11-13 05:39:05,001 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) switched from DEPLOYING to RUNNING.
+2022-11-13 05:39:05,007 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - State backend is set to heap memory (checkpoints to filesystem "file:/root/dannylian/code/ds2/savepoints")
+2022-11-13 05:39:05,136 WARN  org.apache.flink.metrics.MetricGroup                          - The operator name TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) exceeded the 80 characters length limit and was truncated.
+2022-11-13 05:39:05,172 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.
+2022-11-13 05:39:05,371 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%100%1668289145371%1668289145271%0%6
+2022-11-13 05:39:07,343 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%72%1668289147343%1668289147271%0%6
+2022-11-13 05:39:27,276 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%3%1668289167276%1668289167271%0%6
+2022-11-13 05:39:29,312 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%41%1668289169312%1668289169271%0%6
+2022-11-13 05:39:31,274 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%3%1668289171274%1668289171271%0%6
+2022-11-13 05:39:31,313 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%42%1668289171313%1668289171271%0%6
+2022-11-13 05:39:35,321 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%50%1668289175321%1668289175271%0%6
+2022-11-13 05:40:13,294 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%23%1668289213294%1668289213271%0%6
+2022-11-13 05:40:19,288 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%17%1668289219288%1668289219271%0%6
+2022-11-13 05:40:35,281 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%10%1668289235281%1668289235271%0%6
+2022-11-13 05:40:51,375 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%104%1668289251375%1668289251271%0%6
+2022-11-13 05:40:57,418 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%147%1668289257418%1668289257271%0%6
+2022-11-13 05:41:01,622 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%351%1668289261622%1668289261271%0%6
+2022-11-13 05:41:13,887 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%616%1668289273887%1668289273271%0%6
+2022-11-13 05:41:19,472 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%201%1668289279472%1668289279271%0%6
+2022-11-13 05:41:27,979 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%708%1668289287979%1668289287271%0%6
+2022-11-13 05:41:30,022 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%751%1668289290022%1668289289271%0%6
+2022-11-13 05:41:30,022 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%751%1668289290022%1668289289271%0%6
+2022-11-13 05:41:56,022 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%751%1668289316022%1668289315271%0%6
+2022-11-13 05:42:03,912 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%641%1668289323912%1668289323271%0%6
+2022-11-13 05:42:03,912 WARN  ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8      - %latency%641%1668289323912%1668289323271%0%6
+2022-11-13 05:42:13,784 INFO  org.apache.flink.runtime.taskmanager.Task                     - Attempting to cancel task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79).
+2022-11-13 05:42:13,784 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) switched from RUNNING to CANCELING.
+2022-11-13 05:42:13,790 INFO  org.apache.flink.runtime.taskmanager.Task                     - Triggering cancellation of task code TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79).
+2022-11-13 05:42:13,796 INFO  org.apache.flink.runtime.taskmanager.Task                     - TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) switched from CANCELING to CANCELED.
+2022-11-13 05:42:13,797 INFO  org.apache.flink.runtime.taskmanager.Task                     - Freeing task resources for TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79).
+2022-11-13 05:42:13,807 INFO  org.apache.flink.runtime.taskmanager.Task                     - Ensuring all FileSystem streams are closed for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (7/11) (8744868aec9ccff6c170f54028384c79) [CANCELED]
+2022-11-13 05:42:13,808 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - Un-registering task and sending final execution state CANCELED to JobManager for task TriggerWindow(TumblingEventTimeWindows(10000), ListStateDescriptor{serializer=org.apache.flink.api.common.typeutils.base.ListSerializer@ea9b9bec}, EventTimeTrigger(), WindowedStream.apply(CoGroupedStreams.java:303)) -> DummyLatencySink (8744868aec9ccff6c170f54028384c79)
+2022-11-13 05:42:38,782 INFO  org.apache.flink.runtime.taskmanager.TaskManager              - RECEIVED SIGNAL 15: SIGTERM. Shutting down as requested.
+2022-11-13 05:42:38,783 INFO  org.apache.flink.runtime.blob.TransientBlobCache              - Shutting down BLOB cache
+2022-11-13 05:42:38,783 INFO  org.apache.flink.runtime.blob.PermanentBlobCache              - Shutting down BLOB cache
+2022-11-13 05:42:38,785 INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager          - I/O manager removed spill file directory /tmp/flink-io-b60eee37-a01e-4d61-9e6c-570f81ad91d0

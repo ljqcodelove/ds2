@@ -1,0 +1,13 @@
+org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer010$FlinkKafkaProducer010Configuration.class
+org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer010$1.class
+org/apache/flink/streaming/connectors/kafka/Kafka010JsonTableSource$Builder.class
+org/apache/flink/streaming/connectors/kafka/Kafka010AvroTableSource$Builder.class
+org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer010.class
+org/apache/flink/streaming/connectors/kafka/FlinkKafkaConsumer010.class
+org/apache/flink/streaming/connectors/kafka/Kafka010JsonTableSink.class
+org/apache/flink/streaming/connectors/kafka/Kafka010JsonTableSource.class
+org/apache/flink/streaming/connectors/kafka/Kafka010TableSource.class
+org/apache/flink/streaming/connectors/kafka/internal/Kafka010Fetcher.class
+org/apache/flink/streaming/connectors/kafka/internal/Kafka010PartitionDiscoverer.class
+org/apache/flink/streaming/connectors/kafka/internal/KafkaConsumerCallBridge010.class
+org/apache/flink/streaming/connectors/kafka/Kafka010AvroTableSource.class

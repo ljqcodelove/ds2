@@ -1,0 +1,9 @@
+org/apache/flink/metrics/datadog/DGauge.class
+org/apache/flink/metrics/datadog/DMetric.class
+org/apache/flink/metrics/datadog/DMeter.class
+org/apache/flink/metrics/datadog/DatadogHttpClient.class
+org/apache/flink/metrics/datadog/DSeries.class
+org/apache/flink/metrics/datadog/MetricType.class
+org/apache/flink/metrics/datadog/DatadogHttpReporter.class
+org/apache/flink/metrics/datadog/DCounter.class
+org/apache/flink/metrics/datadog/DatadogHttpReporter$DatadogHttpRequest.class

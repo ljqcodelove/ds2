@@ -1,0 +1,13 @@
+org/apache/flink/streaming/connectors/elasticsearch/util/NoOpFailureHandler.class
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSinkBase$1.class
+org/apache/flink/streaming/connectors/elasticsearch/util/ElasticsearchUtils.class
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSinkBase$BulkFlushBackoffPolicy.class
+org/apache/flink/streaming/connectors/elasticsearch/BulkProcessorIndexer.class
+org/apache/flink/streaming/connectors/elasticsearch/ActionRequestFailureHandler.class
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSinkBase$FlushBackoffType.class
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSinkFunction.class
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchApiCallBridge.class
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSinkBase.class
+org/apache/flink/streaming/connectors/elasticsearch/RequestIndexer.class
+org/apache/flink/streaming/connectors/elasticsearch/util/RetryRejectedExecutionFailureHandler.class
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSinkBase$BulkProcessorListener.class

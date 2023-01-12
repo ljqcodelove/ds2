@@ -1,0 +1,4 @@
+org/apache/flink/annotation/VisibleForTesting.class
+org/apache/flink/annotation/PublicEvolving.class
+org/apache/flink/annotation/Internal.class
+org/apache/flink/annotation/Public.class

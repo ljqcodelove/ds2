@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-KMeans.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/KMeans.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-ConnectedComponents.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/ConnectedComponents.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-EnumTriangles.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/EnumTriangles.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-PageRank.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/PageRank.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-TransitiveClosure.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/TransitiveClosure.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-WebLogAnalysis.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/WebLogAnalysis.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-WordCount.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/WordCount.jar"/>
+  <copy file="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/flink-examples-batch_2.11-1.4.1-DistCp.jar" tofile="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-batch/target/DistCp.jar"/>
+</target>
+</project>

@@ -1,0 +1,5 @@
+org/apache/flink/streaming/connectors/elasticsearch2/examples/ElasticsearchSinkExample.class
+org/apache/flink/streaming/connectors/elasticsearch/EmbeddedElasticsearchNodeEnvironmentImpl.class
+org/apache/flink/streaming/connectors/elasticsearch2/ElasticsearchSinkITCase.class
+org/apache/flink/streaming/connectors/elasticsearch2/examples/ElasticsearchSinkExample$2.class
+org/apache/flink/streaming/connectors/elasticsearch2/examples/ElasticsearchSinkExample$1.class

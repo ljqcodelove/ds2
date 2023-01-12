@@ -1,0 +1,4 @@
+org/apache/flink/metrics/slf4j/TestUtils.class
+org/apache/flink/metrics/slf4j/TestUtils$TestAppender.class
+org/apache/flink/metrics/slf4j/Slf4jReporterTest.class
+org/apache/flink/metrics/slf4j/TestUtils$1.class

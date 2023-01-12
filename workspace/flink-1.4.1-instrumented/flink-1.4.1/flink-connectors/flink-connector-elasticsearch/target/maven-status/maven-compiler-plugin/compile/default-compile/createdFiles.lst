@@ -1,0 +1,4 @@
+org/apache/flink/streaming/connectors/elasticsearch/ElasticsearchSink.class
+org/apache/flink/streaming/connectors/elasticsearch/IndexRequestBuilderWrapperFunction.class
+org/apache/flink/streaming/connectors/elasticsearch/Elasticsearch1ApiCallBridge.class
+org/apache/flink/streaming/connectors/elasticsearch/IndexRequestBuilder.class

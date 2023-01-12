@@ -1,0 +1,8 @@
+org/apache/flink/runtime/fs/hdfs/HadoopDataInputStreamTest.class
+org/apache/flink/runtime/fs/hdfs/HadoopDataInputStreamTest$SeekableByteArrayInputStream.class
+org/apache/flink/runtime/fs/hdfs/HadoopFreeFsFactoryTest.class
+org/apache/flink/runtime/fs/hdfs/HadoopFsFactoryTest.class
+org/apache/flink/runtime/fs/hdfs/LimitedConnectionsConfigurationTest.class
+org/apache/flink/runtime/fs/hdfs/HadoopFreeTests.class
+org/apache/flink/runtime/fs/hdfs/HadoopFreeFsFactoryTest$HadoopFreeClassLoader.class
+org/apache/flink/runtime/fs/hdfs/HadoopConfigLoadingTest.class

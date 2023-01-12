@@ -1,0 +1,5 @@
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-mesos/src/test/java/org/apache/flink/mesos/scheduler/OfferTest.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-mesos/src/test/java/org/apache/flink/mesos/util/MesosResourceAllocationTest.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-mesos/src/test/java/org/apache/flink/mesos/runtime/clusterframework/MesosFlinkResourceManagerTest.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-mesos/src/test/java/org/apache/flink/mesos/runtime/clusterframework/MesosTaskManagerParametersTest.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-mesos/src/test/java/org/apache/flink/mesos/runtime/clusterframework/MesosResourceManagerTest.java

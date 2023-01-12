@@ -1,0 +1,12 @@
+org/apache/flink/dropwizard/metrics/DropwizardFlinkHistogramWrapperTest$TestingScheduledReporter.class
+org/apache/flink/dropwizard/metrics/DropwizardMeterWrapperTest.class
+org/apache/flink/dropwizard/ScheduledDropwizardReporterTest.class
+org/apache/flink/dropwizard/ScheduledDropwizardReporterTest$TestingScheduledDropwizardReporter.class
+org/apache/flink/dropwizard/ScheduledDropwizardReporterTest$2.class
+org/apache/flink/dropwizard/ScheduledDropwizardReporterTest$3.class
+org/apache/flink/dropwizard/metrics/DropwizardFlinkHistogramWrapperTest.class
+org/apache/flink/dropwizard/metrics/FlinkMeterWrapperTest.class
+org/apache/flink/dropwizard/ScheduledDropwizardReporterTest$4.class
+org/apache/flink/dropwizard/metrics/DropwizardFlinkHistogramWrapperTest$TestingReporter.class
+org/apache/flink/dropwizard/ScheduledDropwizardReporterTest$1.class
+org/apache/flink/dropwizard/metrics/DropwizardFlinkHistogramWrapperTest$CompletableFuture.class

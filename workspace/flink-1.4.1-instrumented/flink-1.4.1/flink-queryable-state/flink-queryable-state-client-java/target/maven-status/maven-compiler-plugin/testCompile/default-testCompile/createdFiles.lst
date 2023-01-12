@@ -1,0 +1,13 @@
+org/apache/flink/queryablestate/client/state/ImmutableValueStateTest.class
+org/apache/flink/queryablestate/client/state/ImmutableListStateTest.class
+org/apache/flink/queryablestate/client/state/ImmutableReducingStateTest$SumReduce.class
+org/apache/flink/queryablestate/client/state/ImmutableFoldingStateTest.class
+org/apache/flink/queryablestate/client/state/ImmutableAggregatingStateTest$1.class
+org/apache/flink/queryablestate/client/state/ImmutableReducingStateTest.class
+org/apache/flink/queryablestate/client/state/ImmutableAggregatingStateTest$SumAggr.class
+org/apache/flink/queryablestate/client/state/ImmutableFoldingStateTest$SumFold.class
+org/apache/flink/queryablestate/client/state/ImmutableReducingStateTest$1.class
+org/apache/flink/queryablestate/client/VoidNamespaceTypeInfoTest.class
+org/apache/flink/queryablestate/client/state/ImmutableMapStateTest.class
+org/apache/flink/queryablestate/client/state/ImmutableAggregatingStateTest.class
+org/apache/flink/queryablestate/client/state/ImmutableFoldingStateTest$1.class

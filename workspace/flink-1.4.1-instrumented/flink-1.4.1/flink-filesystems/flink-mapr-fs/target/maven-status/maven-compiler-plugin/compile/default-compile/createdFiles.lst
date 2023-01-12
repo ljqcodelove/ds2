@@ -1,0 +1,2 @@
+org/apache/flink/runtime/fs/maprfs/MapRFileSystem.class
+org/apache/flink/runtime/fs/maprfs/MapRFsFactory.class

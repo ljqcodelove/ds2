@@ -1,0 +1,10 @@
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/example/Message.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/CassandraConnectorITCase.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/CassandraSinkBaseTest.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/Pojo.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/CassandraTupleWriteAheadSinkTest.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/example/CassandraTupleWriteAheadSinkExample.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/example/CassandraPojoSinkExample.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/example/CassandraTupleSinkExample.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/ResultSetFutures.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/batch/connectors/cassandra/example/BatchExample.java

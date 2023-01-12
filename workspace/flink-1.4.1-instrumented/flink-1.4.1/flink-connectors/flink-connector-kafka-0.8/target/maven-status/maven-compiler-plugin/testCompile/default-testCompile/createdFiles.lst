@@ -1,0 +1,12 @@
+org/apache/flink/streaming/connectors/kafka/Kafka08ITCase.class
+org/apache/flink/streaming/connectors/kafka/KafkaConsumer08Test.class
+org/apache/flink/streaming/connectors/kafka/Kafka08ProducerITCase.class
+org/apache/flink/streaming/connectors/kafka/KafkaShortRetention08ITCase.class
+org/apache/flink/streaming/connectors/kafka/Kafka08JsonTableSinkTest.class
+org/apache/flink/streaming/connectors/kafka/Kafka08AvroTableSourceTest.class
+org/apache/flink/streaming/connectors/kafka/Kafka08JsonTableSourceTest.class
+org/apache/flink/streaming/connectors/kafka/KafkaTestEnvironmentImpl.class
+org/apache/flink/streaming/connectors/kafka/KafkaProducerTest$1.class
+org/apache/flink/streaming/connectors/kafka/KafkaConsumer08Test$DummyFlinkKafkaConsumer.class
+org/apache/flink/streaming/connectors/kafka/KafkaTestEnvironmentImpl$KafkaOffsetHandlerImpl.class
+org/apache/flink/streaming/connectors/kafka/KafkaProducerTest.class

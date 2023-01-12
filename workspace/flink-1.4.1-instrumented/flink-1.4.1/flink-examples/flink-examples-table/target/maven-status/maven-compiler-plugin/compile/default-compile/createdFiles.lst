@@ -1,0 +1,4 @@
+org/apache/flink/table/examples/java/WordCountSQL.class
+org/apache/flink/table/examples/java/WordCountTable.class
+org/apache/flink/table/examples/java/WordCountTable$WC.class
+org/apache/flink/table/examples/java/WordCountSQL$WC.class

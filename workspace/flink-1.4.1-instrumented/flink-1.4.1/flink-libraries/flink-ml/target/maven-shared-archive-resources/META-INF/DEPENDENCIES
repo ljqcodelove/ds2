@@ -1,0 +1,41 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+flink-ml
+
+
+From: 'an unknown organization'
+  - core (https://github.com/fommil/netlib-java/core) com.github.fommil.netlib:core:jar:1.1.2
+    License: BSD 3 Clause  (http://opensource.org/licenses/BSD-3-Clause)
+  - JTransforms (http://sourceforge.net/projects/jtransforms/) com.github.rwl:jtransforms:jar:2.4.0
+    License: MPL  (http://www.mozilla.org/MPL/2.0/index.txt)    License: LGPL  (http://www.gnu.org/licenses/lgpl-2.1.txt)    License: GPL  (http://www.gnu.org/licenses/gpl-2.0.txt)
+  - opencsv (http://opencsv.sf.net) net.sf.opencsv:opencsv:jar:2.3
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Fortran to Java ARPACK (http://f2j.sourceforge.net) net.sourceforge.f2j:arpack_combined_all:jar:0.1
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+
+From: 'com.chuusai'
+  - shapeless-core (https://github.com/milessabin/shapeless) com.chuusai:shapeless_2.11:bundle:2.0.0
+    License: Apache License  (http://www.apache.org/licenses/)
+
+From: 'org.scalanlp'
+  - breeze-macros (http://scalanlp.org/) org.scalanlp:breeze-macros_2.11:jar:0.12
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.html)
+  - breeze (http://scalanlp.org/) org.scalanlp:breeze_2.11:jar:0.12
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.html)
+
+From: 'org.spire-math' (http://spire-math.org)
+  - spire-macros (http://spire-math.org) org.spire-math:spire-macros_2.11:jar:0.7.4
+    License: BSD-style  (http://opensource.org/licenses/MIT)
+  - spire (http://spire-math.org) org.spire-math:spire_2.11:jar:0.7.4
+    License: BSD-style  (http://opensource.org/licenses/MIT)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - force-shading (https://www.apache.org/force-shading/) org.apache.flink:force-shading:jar:1.4.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

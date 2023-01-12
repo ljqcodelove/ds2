@@ -1,0 +1,2 @@
+org/apache/flink/fs/s3presto/PrestoS3FileSystemTest.class
+org/apache/flink/fs/s3presto/PrestoS3FileSystemITCase.class

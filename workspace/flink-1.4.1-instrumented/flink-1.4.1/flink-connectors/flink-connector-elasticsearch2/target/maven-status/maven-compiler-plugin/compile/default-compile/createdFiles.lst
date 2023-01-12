@@ -1,0 +1,7 @@
+org/apache/flink/streaming/connectors/elasticsearch2/RequestIndexer.class
+org/apache/flink/streaming/connectors/elasticsearch2/ElasticsearchSinkFunction.class
+org/apache/flink/streaming/connectors/elasticsearch2/OldNewElasticsearchSinkFunctionBridge.class
+org/apache/flink/streaming/connectors/elasticsearch2/Elasticsearch2ApiCallBridge.class
+org/apache/flink/streaming/connectors/elasticsearch2/Elasticsearch2ApiCallBridge$1.class
+org/apache/flink/streaming/connectors/elasticsearch2/ElasticsearchSink.class
+org/apache/flink/streaming/connectors/elasticsearch2/OldNewRequestIndexerBridge.class

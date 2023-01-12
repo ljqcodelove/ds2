@@ -1,0 +1,80 @@
+2022-11-13 05:43:11,378 INFO  org.apache.flink.client.CliFrontend                           - --------------------------------------------------------------------------------
+2022-11-13 05:43:11,379 INFO  org.apache.flink.client.CliFrontend                           -  Starting Command Line Client (Version: 1.4.1, Rev:<unknown>, Date:<unknown>)
+2022-11-13 05:43:11,379 INFO  org.apache.flink.client.CliFrontend                           -  OS current user: root
+2022-11-13 05:43:11,599 INFO  org.apache.flink.client.CliFrontend                           -  Current Hadoop/Kerberos user: root
+2022-11-13 05:43:11,599 INFO  org.apache.flink.client.CliFrontend                           -  JVM: OpenJDK 64-Bit Server VM - Tencent - 1.8/25.292-b2
+2022-11-13 05:43:11,599 INFO  org.apache.flink.client.CliFrontend                           -  Maximum heap size: 7093 MiBytes
+2022-11-13 05:43:11,599 INFO  org.apache.flink.client.CliFrontend                           -  JAVA_HOME: (not set)
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -  Hadoop version: 2.4.1
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -  JVM Options:
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     -Dlog.file=/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/log/flink-root-client-VM-56-161-centos.log
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     -Dlog4j.configuration=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/log4j-cli.properties
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     -Dlogback.configurationFile=file:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf/logback.xml
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -  Program Arguments:
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     run
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     -d
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     --class
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     /data/dannylian/LongTune/query8/flink-examples-ContTune-query8-any-jar-with-dependencies.jar
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     --p-auction-source
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     1
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     --p-person-source
+2022-11-13 05:43:11,601 INFO  org.apache.flink.client.CliFrontend                           -     1
+2022-11-13 05:43:11,602 INFO  org.apache.flink.client.CliFrontend                           -     --p-window
+2022-11-13 05:43:11,602 INFO  org.apache.flink.client.CliFrontend                           -     11
+2022-11-13 05:43:11,602 INFO  org.apache.flink.client.CliFrontend                           -  Classpath: :/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-dist_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-python_2.11-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/flink-shaded-hadoop2-uber-1.4.1.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/log4j-1.2.17.jar:/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/lib/slf4j-log4j12-1.7.7.jar:::
+2022-11-13 05:43:11,602 INFO  org.apache.flink.client.CliFrontend                           - --------------------------------------------------------------------------------
+2022-11-13 05:43:11,602 INFO  org.apache.flink.client.CliFrontend                           - Using configuration directory /root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-dist/target/flink-1.4.1-bin/flink-1.4.1/conf
+2022-11-13 05:43:11,602 INFO  org.apache.flink.client.CliFrontend                           - Trying to load configuration file
+2022-11-13 05:43:11,604 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, 9.135.56.161
+2022-11-13 05:43:11,604 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2022-11-13 05:43:11,604 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.mb, 1024
+2022-11-13 05:43:11,604 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.mb, 512
+2022-11-13 05:43:11,604 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 2
+2022-11-13 05:43:11,605 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.memory.preallocate, false
+2022-11-13 05:43:11,605 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2022-11-13 05:43:11,605 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: web.port, 8081
+2022-11-13 05:43:11,605 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, filesystem
+2022-11-13 05:43:11,605 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, file:///root/dannylian/code/ds2/savepoints/
+2022-11-13 05:43:11,606 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: metrics.latency.interval, 10
+2022-11-13 05:43:11,716 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, 9.135.56.161
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.mb, 1024
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.mb, 512
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 2
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.memory.preallocate, false
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: web.port, 8081
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, filesystem
+2022-11-13 05:43:11,717 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, file:///root/dannylian/code/ds2/savepoints/
+2022-11-13 05:43:11,718 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: metrics.latency.interval, 10
+2022-11-13 05:43:11,745 INFO  org.apache.flink.runtime.security.modules.HadoopModule        - Hadoop user set to root (auth:SIMPLE)
+2022-11-13 05:43:11,759 INFO  org.apache.flink.client.CliFrontend                           - Running 'run' command.
+2022-11-13 05:43:11,764 INFO  org.apache.flink.client.CliFrontend                           - Building program from JAR file
+2022-11-13 05:43:11,874 INFO  org.apache.flink.client.CliFrontend                           - Cluster configuration: Standalone cluster with JobManager at /9.135.56.161:6123
+2022-11-13 05:43:11,874 INFO  org.apache.flink.client.CliFrontend                           - Using address 9.135.56.161:6123 to connect to JobManager.
+2022-11-13 05:43:11,874 INFO  org.apache.flink.client.CliFrontend                           - JobManager web interface address http://9.135.56.161:8081
+2022-11-13 05:43:11,874 INFO  org.apache.flink.client.CliFrontend                           - Starting execution of program
+2022-11-13 05:43:11,875 INFO  org.apache.flink.client.program.StandaloneClusterClient       - Starting program in interactive mode
+2022-11-13 05:43:11,905 INFO  org.apache.flink.api.java.typeutils.TypeExtractor             - The default constructor of class org.apache.beam.sdk.nexmark.model.Person should be Public to be used as a POJO.
+2022-11-13 05:43:11,925 INFO  org.apache.flink.api.java.typeutils.TypeExtractor             - The default constructor of class org.apache.beam.sdk.nexmark.model.Auction should be Public to be used as a POJO.
+2022-11-13 05:43:11,941 INFO  org.apache.flink.api.java.typeutils.TypeExtractor             - class org.apache.flink.streaming.api.datastream.CoGroupedStreams$TaggedUnion does not contain a setter for field one
+2022-11-13 05:43:11,941 INFO  org.apache.flink.api.java.typeutils.TypeExtractor             - class org.apache.flink.streaming.api.datastream.CoGroupedStreams$TaggedUnion is not a valid POJO type because not all fields are valid POJO fields.
+2022-11-13 05:43:11,942 INFO  org.apache.flink.api.java.typeutils.TypeExtractor             - class org.apache.flink.streaming.api.datastream.CoGroupedStreams$TaggedUnion does not contain a setter for field one
+2022-11-13 05:43:11,942 INFO  org.apache.flink.api.java.typeutils.TypeExtractor             - class org.apache.flink.streaming.api.datastream.CoGroupedStreams$TaggedUnion is not a valid POJO type because not all fields are valid POJO fields.
+2022-11-13 05:43:11,967 WARN  org.apache.flink.streaming.api.environment.StreamContextEnvironment  - Job was executed in detached mode, the results will be available on completion.
+2022-11-13 05:43:12,043 INFO  org.apache.flink.client.program.StandaloneClusterClient       - Starting client actor system.
+2022-11-13 05:43:12,043 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - Trying to select the network interface and address to use by connecting to the leading JobManager.
+2022-11-13 05:43:12,044 INFO  org.apache.flink.runtime.util.LeaderRetrievalUtils            - TaskManager will try to connect for 10000 milliseconds before falling back to heuristics
+2022-11-13 05:43:12,044 INFO  org.apache.flink.runtime.net.ConnectionUtils                  - Retrieved new target address /9.135.56.161:6123.
+2022-11-13 05:43:12,047 INFO  org.apache.flink.client.program.StandaloneClusterClient       - Trying to start actor system at vm-56-161-centos:0
+2022-11-13 05:43:12,316 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2022-11-13 05:43:12,351 INFO  akka.remote.Remoting                                          - Starting remoting
+2022-11-13 05:43:12,432 INFO  akka.remote.Remoting                                          - Remoting started; listening on addresses :[akka.tcp://flink@vm-56-161-centos:37942]
+2022-11-13 05:43:12,437 INFO  org.apache.flink.client.program.StandaloneClusterClient       - Actor system started at akka.tcp://flink@vm-56-161-centos:37942
+2022-11-13 05:43:12,545 INFO  org.apache.flink.client.program.StandaloneClusterClient       - Submitting Job with JobID: 886e9ddde07dd43182bf070e5028eab0. Returning after job submission.
+2022-11-13 05:43:12,547 INFO  org.apache.flink.runtime.client.JobClient                     - Checking and uploading JAR files
+2022-11-13 05:43:13,166 INFO  org.apache.flink.client.CliFrontend                           - Job has been submitted with JobID 886e9ddde07dd43182bf070e5028eab0
+2022-11-13 05:43:13,170 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator         - Shutting down remote daemon.
+2022-11-13 05:43:13,171 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator         - Remote daemon shut down; proceeding with flushing remote transports.
+2022-11-13 05:43:13,199 INFO  akka.remote.RemoteActorRefProvider$RemotingTerminator         - Remoting shut down.

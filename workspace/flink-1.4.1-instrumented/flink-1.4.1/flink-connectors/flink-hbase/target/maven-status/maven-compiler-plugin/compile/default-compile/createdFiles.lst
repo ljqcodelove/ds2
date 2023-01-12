@@ -1,0 +1,6 @@
+org/apache/flink/addons/hbase/HBaseRowInputFormat.class
+org/apache/flink/addons/hbase/HBaseTableSchema.class
+org/apache/flink/addons/hbase/HBaseTableSource.class
+org/apache/flink/addons/hbase/TableInputFormat.class
+org/apache/flink/addons/hbase/AbstractTableInputFormat.class
+org/apache/flink/addons/hbase/TableInputSplit.class

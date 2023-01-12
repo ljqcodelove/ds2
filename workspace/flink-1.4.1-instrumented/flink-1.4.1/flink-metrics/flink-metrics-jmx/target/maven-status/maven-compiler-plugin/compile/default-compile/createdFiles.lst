@@ -1,0 +1,13 @@
+org/apache/flink/metrics/jmx/JMXReporter$JmxGaugeMBean.class
+org/apache/flink/metrics/jmx/JMXReporter$JmxGauge.class
+org/apache/flink/metrics/jmx/JMXReporter$JmxHistogramMBean.class
+org/apache/flink/metrics/jmx/JMXReporter$MetricMBean.class
+org/apache/flink/metrics/jmx/JMXReporter$JmxCounterMBean.class
+org/apache/flink/metrics/jmx/JMXReporter$JmxHistogram.class
+org/apache/flink/metrics/jmx/JMXReporter$JmxMeter.class
+org/apache/flink/metrics/jmx/JMXReporter$JmxMeterMBean.class
+org/apache/flink/metrics/jmx/JMXReporter.class
+org/apache/flink/metrics/jmx/JMXReporter$1.class
+org/apache/flink/metrics/jmx/JMXReporter$JMXServer.class
+org/apache/flink/metrics/jmx/JMXReporter$AbstractBean.class
+org/apache/flink/metrics/jmx/JMXReporter$JmxCounter.class

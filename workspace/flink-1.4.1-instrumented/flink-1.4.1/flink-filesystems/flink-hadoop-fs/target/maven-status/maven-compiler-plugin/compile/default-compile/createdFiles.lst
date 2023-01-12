@@ -1,0 +1,7 @@
+org/apache/flink/runtime/util/HadoopUtils.class
+org/apache/flink/runtime/fs/hdfs/HadoopFsFactory.class
+org/apache/flink/runtime/fs/hdfs/HadoopDataInputStream.class
+org/apache/flink/runtime/fs/hdfs/HadoopFileSystem.class
+org/apache/flink/runtime/fs/hdfs/HadoopBlockLocation.class
+org/apache/flink/runtime/fs/hdfs/HadoopDataOutputStream.class
+org/apache/flink/runtime/fs/hdfs/HadoopFileStatus.class

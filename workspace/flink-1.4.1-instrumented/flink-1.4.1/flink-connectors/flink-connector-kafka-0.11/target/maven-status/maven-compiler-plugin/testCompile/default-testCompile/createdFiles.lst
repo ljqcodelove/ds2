@@ -1,0 +1,17 @@
+org/apache/flink/streaming/connectors/kafka/Kafka011ITCase$LimitedLongDeserializer.class
+org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducerITCase.class
+org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011ITCase.class
+org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011StateSerializerTest.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ProducerExactlyOnceITCase.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ITCase$3.class
+org/apache/flink/streaming/connectors/kafka/internal/TransactionalIdsGeneratorTest.class
+org/apache/flink/streaming/connectors/kafka/Kafka011AvroTableSourceTest.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ITCase$TimestampValidatingOperator.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ITCase$2.class
+org/apache/flink/streaming/connectors/kafka/KafkaTestEnvironmentImpl.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ITCase$TimestampValidatingOperator$1.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ProducerAtLeastOnceITCase.class
+org/apache/flink/streaming/connectors/kafka/Kafka011JsonTableSourceTest.class
+org/apache/flink/streaming/connectors/kafka/KafkaTestEnvironmentImpl$KafkaOffsetHandlerImpl.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ITCase$1.class
+org/apache/flink/streaming/connectors/kafka/Kafka011ITCase.class

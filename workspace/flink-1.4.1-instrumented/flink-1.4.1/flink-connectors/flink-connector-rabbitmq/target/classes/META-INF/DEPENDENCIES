@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+flink-connector-rabbitmq
+
+
+From: 'Pivotal Software, Inc.' (http://www.rabbitmq.com)
+  - RabbitMQ Java Client (http://www.rabbitmq.com) com.rabbitmq:amqp-client:jar:4.2.0
+    License: ASL 2.0  (http://www.apache.org/licenses/LICENSE-2.0.html)    License: GPL v2  (http://www.gnu.org/licenses/gpl-2.0.txt)    License: MPL 1.1  (http://www.mozilla.org/MPL/MPL-1.1.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - force-shading (https://www.apache.org/force-shading/) org.apache.flink:force-shading:jar:1.4.1
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

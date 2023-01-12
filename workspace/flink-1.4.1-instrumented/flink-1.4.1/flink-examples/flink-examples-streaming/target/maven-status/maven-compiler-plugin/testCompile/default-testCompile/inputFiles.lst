@@ -1,0 +1,5 @@
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/src/test/java/org/apache/flink/streaming/test/socket/SocketWindowWordCountITCase.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/src/test/java/org/apache/flink/streaming/test/StreamingExamplesITCase.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/src/test/java/org/apache/flink/streaming/test/examples/join/WindowJoinData.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/src/test/java/org/apache/flink/streaming/test/scala/examples/windowing/TopSpeedWindowingExampleITCase.java
+/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/flink-examples/flink-examples-streaming/src/test/java/org/apache/flink/streaming/test/examples/windowing/TopSpeedWindowingExampleITCase.java
