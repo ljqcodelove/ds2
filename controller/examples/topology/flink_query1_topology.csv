@@ -1,2 +1,2 @@
-Source: Bids Source,Source: Bids Source,1,Mapper,Mapper,1
-Mapper,Mapper,1,Latency Sink,Latency Sink,1
+Source: Bids Source,Source: Bids Source,1,Mapper,Mapper,25
+Mapper,Mapper,25,Latency Sink,Latency Sink,3

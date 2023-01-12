@@ -1,2 +1,2 @@
-Source: Custom Source: Persons -> Timestamps-Watermarks -> Map,Source: Custom Source: Persons -> Timestamps-Watermarks -> Map,1,TriggerWindow -> DummyLatencySink,TriggerWindow -> DummyLatencySink,3
-Source: Custom Source: Auctions -> Timestamps-Watermarks -> Map,Source: Custom Source: Auctions -> Timestamps-Watermarks -> Map,1,TriggerWindow -> DummyLatencySink,TriggerWindow -> DummyLatencySink,3
+Source: Custom Source: Persons -> Timestamps-Watermarks -> Map,Source: Custom Source: Persons -> Timestamps-Watermarks -> Map,1,TriggerWindow -> DummyLatencySink,TriggerWindow -> DummyLatencySink,11
+Source: Custom Source: Auctions -> Timestamps-Watermarks -> Map,Source: Custom Source: Auctions -> Timestamps-Watermarks -> Map,1,TriggerWindow -> DummyLatencySink,TriggerWindow -> DummyLatencySink,11

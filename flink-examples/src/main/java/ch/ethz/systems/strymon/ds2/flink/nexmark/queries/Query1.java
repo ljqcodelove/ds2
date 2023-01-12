@@ -41,7 +41,7 @@ public class Query1 {
 
         final float exchangeRate = params.getFloat("exchange-rate", 0.82F);
 
-        final int srcRate = params.getInt("srcRate", 1000000);
+        final int srcRate = params.getInt("srcRate", 2000000);
 
         // set up the execution environment
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
@@ -68,7 +68,7 @@ public class Query1 {
 
         GenericTypeInfo<Object> objectTypeInfo = new GenericTypeInfo<>(Object.class);
         mapped.transform("DummyLatencySink", objectTypeInfo, new DummyLatencyCountingSink<>(logger))
-                .setParallelism(params.getInt("p-map", 1))
+                .setParallelism(params.getInt("p-sink", 1))
         .name("Latency Sink")
         .uid("Latency-Sink");
 

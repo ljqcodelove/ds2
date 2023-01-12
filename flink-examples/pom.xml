@@ -4,7 +4,7 @@
 	<groupId>ch.ethz.systems.strymon.ds2</groupId>
 	<artifactId>flink-examples</artifactId>
 	<packaging>jar</packaging>
-	<version>experiment2-source-1800000</version>
+	<version>ContTune-query1-2000000-new</version>
 	<name>flink-examples</name>
 	<url>http://maven.apache.org</url>
 
@@ -60,7 +60,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifestEntries>
-							<program-class>ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query3</program-class>
+							<program-class>ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query1</program-class>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -96,14 +96,14 @@
 							<goal>jar</goal>
 						</goals>
 						<configuration>
-							<classifier>NEXMarkQuery3</classifier>
+							<classifier>NEXMarkQuery1</classifier>
 
 							<archive>
 								<manifestEntries>
-									<program-class>ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query3</program-class>
+									<program-class>ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query1</program-class>
 								</manifestEntries>
 							</archive>
-							<classifier>NEXMarkQuery3</classifier>
+							<classifier>NEXMarkQuery1</classifier>
 
 						</configuration>
 					</execution>

@@ -55,7 +55,7 @@ public class Query5 {
         // enable latency tracking
         env.getConfig().setLatencyTrackingInterval(5000);
 
-        final int srcRate = params.getInt("srcRate", 1500000);
+        final int srcRate = params.getInt("srcRate", 50000);
 
         DataStream<Bid> bids = env.addSource(new BidSourceFunction(srcRate))
                 .setParallelism(params.getInt("p-bid-source", 1))
@@ -76,7 +76,7 @@ public class Query5 {
 
         GenericTypeInfo<Object> objectTypeInfo = new GenericTypeInfo<>(Object.class);
         windowed.transform("DummyLatencySink", objectTypeInfo, new DummyLatencyCountingSink<>(logger))
-                .setParallelism(params.getInt("p-window", 1));
+                .setParallelism(params.getInt("p-sink", 1));
 
         // execute program
         env.execute("Nexmark Query5");

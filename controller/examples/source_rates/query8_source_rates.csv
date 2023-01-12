@@ -1,5 +1,3 @@
-Source: Custom Source: Auctions -> Timestamps-Watermarks -> Map,1000000
-Source: Custom Source: Persons -> Timestamps-Watermarks -> Map,600000
-#Source: Custom Source: Auctions -> Timestamps-Watermarks -> Map,-1
-#Source: Custom Source: Persons -> Timestamps-Watermarks -> Map,-1
+Source: Custom Source: Auctions -> Timestamps-Watermarks -> Map,700000
+Source: Custom Source: Persons -> Timestamps-Watermarks -> Map,420000
 

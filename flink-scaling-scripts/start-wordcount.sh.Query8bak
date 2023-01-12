@@ -9,7 +9,7 @@
 ### paths configuration ###
 FLINK_BUILD_PATH="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/build-target/"
 FLINK=$FLINK_BUILD_PATH$"bin/flink"
-JAR_PATH="/root/dannylian/code/ds2/flink-examples/target/flink-examples-04281Query8-250000-jar-with-dependencies.jar"
+JAR_PATH="/data/dannylian/LongTune/query8/flink-examples-ContTune-query8-any-jar-with-dependencies.jar"
 
 ### dataflow configuration ###
 QUERY_CLASS="ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query8"

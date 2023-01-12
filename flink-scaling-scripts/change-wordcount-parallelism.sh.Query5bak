@@ -9,7 +9,7 @@
 ### paths configuration ###
 FLINK_BUILD_PATH="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/build-target/"
 FLINK=$FLINK_BUILD_PATH$"bin/flink"
-JAR_PATH="/root/dannylian/code/ds2/flink-examples/target/flink-examples-danny-wordCount-9-jar-with-dependencies.jar"
+JAR_PATH="/data/dannylian/LongTune/query5/flink-examples-ContTune-query5-any-3-jar-with-dependencies.jar"
 readonly SAVEPOINT_PATH="/root/dannylian/code/ds2/savepoints/"
 
 ### dataflow configuration ###
@@ -56,4 +56,4 @@ x=$(echo $savepointFile |tr -d '.')
 x=$(echo $x |tr -d '\n')
 
 
-nohup $FLINK run -d -s $SAVEPOINT_PATH$x --class $QUERY_CLASS $JAR_PATH --p-bid-source $P_SOURCE --p-window $P1 & > job.out
+nohup $FLINK run -d -s $SAVEPOINT_PATH$x --class $QUERY_CLASS $JAR_PATH --p-bid-source $P_SOURCE --p-window $P1 --p-sink $P1 & > job.out

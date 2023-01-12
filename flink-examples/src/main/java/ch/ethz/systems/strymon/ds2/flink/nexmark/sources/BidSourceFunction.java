@@ -42,7 +42,7 @@ public class BidSourceFunction extends RichParallelSourceFunction<Bid> {
 
     @Override
     public void run(SourceContext<Bid> ctx) throws Exception {
-        while (running && eventsCountSoFar < 200_000_000) {
+        while (running && eventsCountSoFar < 20_000_000) {
             long emitStartTime = System.currentTimeMillis();
 
             for (int i = 0; i < rate; i++) {

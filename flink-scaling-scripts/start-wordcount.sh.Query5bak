@@ -9,7 +9,7 @@
 ### paths configuration ###
 FLINK_BUILD_PATH="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/build-target/"
 FLINK=$FLINK_BUILD_PATH$"bin/flink"
-JAR_PATH="/root/dannylian/code/ds2/flink-examples/target/flink-examples-danny-wordCount-9-jar-with-dependencies.jar"
+JAR_PATH="/data/dannylian/LongTune/query5/flink-examples-ContTune-query5-any-3-jar-with-dependencies.jar"
 
 ### dataflow configuration ###
 QUERY_CLASS="ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query5"
@@ -40,4 +40,4 @@ do
     fi
 done
 
-nohup $FLINK run -d --class $QUERY_CLASS $JAR_PATH --p-bid-source $P_SOURCE --p-window $P1  & > job.out
+nohup $FLINK run -d --class $QUERY_CLASS $JAR_PATH --p-bid-source $P_SOURCE --p-window $P1  --p-sink $P1 & > job.out

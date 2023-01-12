@@ -42,7 +42,7 @@ public class PersonSourceFunction extends RichParallelSourceFunction<Person> {
 
     @Override
     public void run(SourceContext<Person> ctx) throws Exception {
-        while (running && eventsCountSoFar < 400_000_000) {
+        while (running && eventsCountSoFar < 40_000_000) {
             long emitStartTime = System.currentTimeMillis();
 
             for (int i = 0; i < rate; i++) {

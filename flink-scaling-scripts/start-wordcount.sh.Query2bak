@@ -9,12 +9,13 @@
 ### paths configuration ###
 FLINK_BUILD_PATH="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/build-target/"
 FLINK=$FLINK_BUILD_PATH$"bin/flink"
-JAR_PATH="/root/dannylian/code/ds2/flink-examples/target/flink-examples-danny-wordCount-4-jar-with-dependencies.jar"
+JAR_PATH="/data/dannylian/LongTune/Query2/flink-examples-ContTune-query2-any-1-jar-with-dependencies.jar"
 
 ### dataflow configuration ###
 QUERY_CLASS="ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query2"
 SOURCE_NAME="Source: Custom Source"
 MAP_NAME="Flat Map"
+SINK_NAME="DummyLatencySink"
 
 ### operators and parallelism
 if [ "$1" == "" ]; then
@@ -37,6 +38,10 @@ do
         echo "FlatMap parallelism: ${parallelism[@]: -1:1}"
         P1="${parallelism[@]: -1:1}"
     fi
+    if [ "${parallelism[0]}" == "$SINK_NAME" ]; then
+        echo "FlatMap parallelism: ${parallelism[@]: -1:1}"
+        P2="${parallelism[@]: -1:1}"
+    fi
 done
 
-nohup $FLINK run -d --class $QUERY_CLASS $JAR_PATH --p-source $P_SOURCE --p-flatMap $P1 & > job.out
+nohup $FLINK run -d --class $QUERY_CLASS $JAR_PATH --p-source $P_SOURCE --p-flatMap $P1 --p-sink $P2 & > job.out

@@ -1,4 +1,4 @@
-Source: Custom Source: Auctions,Source: Custom Source: Auctions,1,Incremental join,Incremental join,7
+Source: Custom Source: Auctions,Source: Custom Source: Auctions,1,Incremental join,Incremental join,18
 Source: Custom Source: Persons,Source: Custom Source: Persons,1,Filter,Filter,1
-Filter,Filter,1,Incremental join,Incremental join,7
-Incremental join,Incremental join,7,Sink,Sink,7
+Filter,Filter,1,Incremental join,Incremental join,18
+Incremental join,Incremental join,18,Sink,Sink,18

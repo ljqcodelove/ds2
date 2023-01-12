@@ -13,7 +13,7 @@ id = "Flink"
 # See: ../examples/topology/
 #
 #topology = "examples/topology/flink_wordcount_topology.csv"
-topology = "examples/topology/flink_query3_topology.csv"
+topology = "examples/topology/flink_query8_topology.csv"
 
 # Directory of the metrics repository containing rate files (required).
 # DS2 expects one rate file per operator instance and policy interval (epoch) 
@@ -35,7 +35,7 @@ file_extension = "log"
 # See: ../examples/source_rates/
 #
 #source_rates = "examples/source_rates/wordcount_source_rates.csv"
-source_rates = "examples/source_rates/query3_source_rates.csv"
+source_rates = "examples/source_rates/query8_source_rates.csv"
 
 # Path to the system-specific bash script that is responsible
 # for applying the new configuration (required).
@@ -58,7 +58,7 @@ policy_interval = 10
 # Number of consecutive policy decisions considered before
 # issuing a re-configuration (default value: 1).
 #
-activation_time = 1
+activation_time = 100
 
 # Number of consecutive policy intervals (epochs) to ignore
 # after a re-configuration (required).

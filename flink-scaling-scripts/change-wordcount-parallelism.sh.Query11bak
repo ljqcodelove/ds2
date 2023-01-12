@@ -9,14 +9,14 @@
 ### paths configuration ###
 FLINK_BUILD_PATH="/root/dannylian/code/ds2/workspace/flink-1.4.1-instrumented/flink-1.4.1/build-target/"
 FLINK=$FLINK_BUILD_PATH$"bin/flink"
-JAR_PATH="/data/dannylian/LongTune/Query1/flink-examples-ContTune-query1-any-jar-with-dependencies.jar"
+JAR_PATH="/data/dannylian/LongTune/Query11/flink-examples-ContTune-query11-any-jar-with-dependencies.jar"
 readonly SAVEPOINT_PATH="/root/dannylian/code/ds2/savepoints/"
 
 ### dataflow configuration ###
-QUERY_CLASS="ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query1"
-SOURCE_NAME="Source: Bids Source"
-MAP_NAME="Mapper"
-SINK_NAME="Latency Sink"
+QUERY_CLASS="ch.ethz.systems.strymon.ds2.flink.nexmark.queries.Query11"
+SOURCE_NAME="Source: Custom Source -> Timestamps-Watermarks"
+WINDOW_NAME="Session Window -> DummyLatencySink"
+SINK_NAME="DummyLatencySink"
 
 ### jobId
 if [ "$1" == "" ]; then
@@ -42,14 +42,13 @@ do
         echo "Source parallelism: ${parallelism[@]: -1:1}"
         P_SOURCE="${parallelism[@]: -1:1}"
     fi
-    ## search for FlatMap
-    if [ "${parallelism[0]}" == "$MAP_NAME" ]; then
-        echo "FlatMap parallelism: ${parallelism[@]: -1:1}"
-        P1="${parallelism[@]: -1:1}"
+    if [ "${parallelism[0]}" == "$WINDOW_NAME" ]; then
+	echo "WINDOW parallelism: ${parallelism[@]: -1:1}"
+	P1="${parallelism[@]: -1:1}"
     fi
-    
+    ## search for FlatMap
     if [ "${parallelism[0]}" == "$SINK_NAME" ]; then
-        echo "Sink parallelism: ${parallelism[@]: -1:1}"
+        echo "SINK parallelism: ${parallelism[@]: -1:1}"
         P2="${parallelism[@]: -1:1}"
     fi
 done
@@ -62,4 +61,4 @@ x=$(echo $savepointFile |tr -d '.')
 x=$(echo $x |tr -d '\n')
 
 
-nohup $FLINK run -d -s $SAVEPOINT_PATH$x --class $QUERY_CLASS $JAR_PATH --p-source $P_SOURCE --p-map $P1 --p-sink $P2 & > job.out
+nohup $FLINK run -d -s $SAVEPOINT_PATH$x --class $QUERY_CLASS $JAR_PATH --p-bid-source $P_SOURCE --p-window $P1 --p-sink $P1 & > job.out
